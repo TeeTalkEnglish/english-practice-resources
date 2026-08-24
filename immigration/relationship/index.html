@@ -1,0 +1,776 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Practice answering real-life questions you may hear during an Australian immigration or visa interview about your relationship.">
+  <title>Australian Immigration English: Relationship Questions | TeeTalkEnglish</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <style>
+    .vocab-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--white);
+      margin: 20px 0;
+    }
+    .vocab-table th, .vocab-table td {
+      padding: 14px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--line);
+    }
+    .vocab-table th {
+      background: var(--paper-deep);
+      font-weight: 800;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: var(--teal-dark);
+    }
+    .vocab-table td {
+      font-size: 15px;
+    }
+    .vocab-table tr:hover {
+      background: var(--paper-deep);
+    }
+
+    .questions-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin: 30px 0;
+    }
+    .question-category {
+      background: var(--white);
+      padding: 25px;
+      border: 1px solid var(--line);
+    }
+    .question-category h3 {
+      color: var(--teal-dark);
+      margin-top: 0;
+      margin-bottom: 18px;
+      font-size: 17px;
+    }
+    .question-category ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .question-category li {
+      padding: 8px 0;
+      border-bottom: 1px solid #f0f0f0;
+      color: var(--ink-soft);
+      font-size: 14px;
+    }
+    .question-category li:last-child {
+      border-bottom: 0;
+    }
+
+    .answer-pattern {
+      background: var(--paper-deep);
+      padding: 20px;
+      margin: 18px 0;
+      border-left: 4px solid var(--teal);
+    }
+    .pattern-label {
+      color: var(--coral);
+      font-weight: 800;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      margin-bottom: 8px;
+    }
+    .pattern-q {
+      font-weight: 700;
+      color: var(--ink);
+      margin: 8px 0;
+    }
+    .pattern-a {
+      color: var(--ink-soft);
+      font-style: italic;
+      margin: 8px 0;
+    }
+
+    .grammar-example {
+      background: var(--white);
+      border: 1px solid var(--line);
+      padding: 20px;
+      margin: 16px 0;
+    }
+    .grammar-heading {
+      color: var(--teal-dark);
+      font-weight: 800;
+      margin: 0 0 12px;
+      font-size: 15px;
+    }
+    .grammar-example p {
+      margin: 6px 0;
+      color: var(--ink-soft);
+      font-size: 14px;
+    }
+
+    .roleplay-dialog {
+      display: grid;
+      gap: 14px;
+      margin: 25px 0;
+    }
+    .dialog-line {
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 16px;
+      padding: 14px;
+      background: var(--white);
+      border: 1px solid var(--line);
+    }
+    .dialog-speaker {
+      font-weight: 800;
+      color: var(--coral);
+      font-size: 13px;
+    }
+    .dialog-speaker.officer {
+      color: var(--teal-dark);
+    }
+    .dialog-text {
+      color: var(--ink);
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .challenge-section {
+      background: var(--paper-deep);
+      padding: 30px;
+      margin: 25px 0;
+      border-radius: 0;
+    }
+    .challenge-intro {
+      color: var(--ink-soft);
+      font-size: 14px;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+    .challenge-questions {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    .challenge-q {
+      background: var(--white);
+      padding: 16px;
+      border-left: 4px solid var(--yellow);
+    }
+    .challenge-q p {
+      margin: 0;
+      color: var(--ink);
+      font-size: 15px;
+    }
+
+    .speaking-practice {
+      background: var(--white);
+      border: 1px solid var(--line);
+      padding: 20px;
+      margin: 20px 0;
+      max-width: 600px;
+    }
+    .practice-q-label {
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--coral);
+      margin-bottom: 12px;
+    }
+    .practice-question {
+      font-size: 18px;
+      font-family: var(--serif);
+      color: var(--ink);
+      margin: 16px 0;
+    }
+    .speak-instruction {
+      color: var(--ink-soft);
+      font-size: 13px;
+      font-style: italic;
+      margin: 16px 0;
+    }
+    .reveal-answer-btn {
+      background: var(--teal-dark);
+      color: var(--white);
+      padding: 11px 16px;
+      border: 0;
+      font-size: 13px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: transform .2s ease;
+    }
+    .reveal-answer-btn:hover {
+      transform: translateY(-2px);
+    }
+    .practice-answer {
+      background: var(--paper-deep);
+      padding: 16px;
+      margin-top: 16px;
+      border-left: 3px solid var(--teal-dark);
+      display: none;
+    }
+    .practice-answer.show {
+      display: block;
+    }
+    .answer-label {
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--teal-dark);
+      margin-bottom: 8px;
+    }
+    .practice-answer p {
+      margin: 0;
+      color: var(--ink);
+      font-size: 15px;
+    }
+
+    .important-note {
+      background: var(--yellow);
+      padding: 20px;
+      margin: 30px 0;
+      border-left: 4px solid var(--coral);
+    }
+    .important-note strong {
+      color: var(--teal-dark);
+    }
+    .important-note p {
+      margin: 0;
+      color: var(--ink);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 850px) {
+      .questions-container {
+        grid-template-columns: 1fr;
+      }
+      .dialog-line {
+        grid-template-columns: 100px 1fr;
+      }
+      .challenge-questions {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .vocab-table th, .vocab-table td {
+        padding: 10px 12px;
+        font-size: 13px;
+      }
+      .question-category {
+        padding: 18px;
+      }
+      .roleplay-dialog {
+        gap: 10px;
+      }
+      .dialog-line {
+        grid-template-columns: 90px 1fr;
+        gap: 12px;
+        padding: 10px;
+      }
+      .dialog-text {
+        font-size: 14px;
+      }
+      .challenge-intro {
+        font-size: 13px;
+      }
+      .speaking-practice {
+        padding: 16px;
+      }
+      .important-note {
+        padding: 16px;
+      }
+    }
+  </style>
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Reveal answer buttons
+      const revealButtons = document.querySelectorAll('.reveal-answer-btn');
+      revealButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+          const answer = e.target.nextElementSibling;
+          if (answer && answer.classList.contains('practice-answer')) {
+            answer.classList.toggle('show');
+            e.target.textContent = answer.classList.contains('show') ? 'Hide answer' : 'Reveal answer';
+          }
+        });
+      });
+
+      // Copy buttons (reuse from main script)
+      const copyButtons = document.querySelectorAll('[data-copy]');
+      copyButtons.forEach((button) => {
+        button.addEventListener('click', async () => {
+          const originalLabel = button.textContent;
+          try {
+            await navigator.clipboard.writeText(button.dataset.copy);
+            button.textContent = 'Copied!';
+            button.setAttribute('aria-label', 'Copied to clipboard');
+            window.setTimeout(() => {
+              button.textContent = originalLabel;
+              button.removeAttribute('aria-label');
+            }, 1800);
+          } catch (error) {
+            button.textContent = 'Copy unavailable';
+            window.setTimeout(() => { button.textContent = originalLabel; }, 1800);
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../../index.html" aria-label="TeeTalkEnglish home">
+        <span class="brand-mark">T</span>
+        <span>TeeTalk<span>English</span></span>
+      </a>
+      <a class="back-link" href="../../index.html#resources">Back to English Practice Resources <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="lesson-title">
+      <div class="hero-inner">
+        <div class="eyebrow">English practice resource <span></span> 20–30 minutes</div>
+        <h1 id="lesson-title">Questions About Your <em>Relationship</em></h1>
+        <p class="hero-lede">Practice answering questions about your husband, marriage, daily life, and proof of your relationship. These are real questions immigration officers may ask you during an Australian visa interview.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#vocabulary">Start the lesson <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="../../index.html#resources">Back to resources <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="lesson-meta"><span class="meta-dot"></span> Intermediate friendly <span class="meta-divider"></span> Speaking, vocabulary & roleplay</div>
+      </div>
+    </section>
+
+    <div class="lesson-layout">
+      <aside class="lesson-nav" aria-label="Lesson sections">
+        <p class="nav-label">In this lesson</p>
+        <a href="#situation">01 <span>The situation</span></a>
+        <a href="#vocabulary">02 <span>Vocabulary</span></a>
+        <a href="#questions">03 <span>Interview questions</span></a>
+        <a href="#patterns">04 <span>Answer patterns</span></a>
+        <a href="#grammar">05 <span>Grammar lesson</span></a>
+        <a href="#roleplay">06 <span>Role-play</span></a>
+        <a href="#challenge">07 <span>Challenge questions</span></a>
+        <a href="#speaking">08 <span>Speaking practice</span></a>
+      </aside>
+
+      <article class="lesson-content">
+        <!-- SITUATION SECTION -->
+        <section id="situation" class="intro-section" aria-labelledby="situation-title">
+          <div class="section-number">01</div>
+          <div>
+            <p class="kicker">The situation</p>
+            <h2 id="situation-title">You are applying for an Australian visa.</h2>
+            <p>An immigration officer asks you questions about your relationship with your husband. You need to explain your relationship clearly and provide evidence that your relationship is genuine.</p>
+            <p>Your answers should be honest, specific, and show that you know details about your husband and your life together. Officers want to see proof that your relationship is real—not just that you both exist.</p>
+          </div>
+        </section>
+
+        <!-- VOCABULARY SECTION -->
+        <section id="vocabulary" class="section-block" aria-labelledby="vocab-title">
+          <div class="section-heading"><p class="kicker">Essential vocabulary</p><h2 id="vocab-title">Key words you will hear and use.</h2></div>
+          <table class="vocab-table">
+            <thead>
+              <tr>
+                <th>Word / Phrase</th>
+                <th>Meaning</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>relationship</strong></td>
+                <td>The connection between two people</td>
+              </tr>
+              <tr>
+                <td><strong>husband</strong></td>
+                <td>Your married male partner</td>
+              </tr>
+              <tr>
+                <td><strong>spouse</strong></td>
+                <td>Married partner (formal)</td>
+              </tr>
+              <tr>
+                <td><strong>marriage</strong></td>
+                <td>The legal bond between two people</td>
+              </tr>
+              <tr>
+                <td><strong>married</strong></td>
+                <td>Legally joined in marriage</td>
+              </tr>
+              <tr>
+                <td><strong>genuine relationship</strong></td>
+                <td>A real, sincere relationship (not fake)</td>
+              </tr>
+              <tr>
+                <td><strong>proof of relationship</strong></td>
+                <td>Documents that show you are together</td>
+              </tr>
+              <tr>
+                <td><strong>evidence</strong></td>
+                <td>Information that proves something is true</td>
+              </tr>
+              <tr>
+                <td><strong>joint account</strong></td>
+                <td>A bank account shared by two people</td>
+              </tr>
+              <tr>
+                <td><strong>shared bills</strong></td>
+                <td>Expenses you both pay for</td>
+              </tr>
+              <tr>
+                <td><strong>photos together</strong></td>
+                <td>Pictures of you and your husband</td>
+              </tr>
+              <tr>
+                <td><strong>travel history</strong></td>
+                <td>Record of places you have been</td>
+              </tr>
+              <tr>
+                <td><strong>communication records</strong></td>
+                <td>Messages, calls, or emails between you</td>
+              </tr>
+              <tr>
+                <td><strong>financial support</strong></td>
+                <td>Money provided to help someone</td>
+              </tr>
+              <tr>
+                <td><strong>live together</strong></td>
+                <td>Share the same home</td>
+              </tr>
+              <tr>
+                <td><strong>wedding certificate</strong></td>
+                <td>Official document of marriage</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- QUESTIONS SECTION -->
+        <section id="questions" class="section-block" aria-labelledby="questions-title">
+          <div class="section-heading"><p class="kicker">Common interview questions</p><h2 id="questions-title">Questions immigration officers may ask.</h2></div>
+
+          <div class="questions-container">
+            <div class="question-category">
+              <h3>Basic Relationship Questions</h3>
+              <ul>
+                <li>How did you meet your husband?</li>
+                <li>When did you first meet?</li>
+                <li>When did you start dating?</li>
+                <li>How long have you been together?</li>
+                <li>When did you get married?</li>
+                <li>Where did you get married?</li>
+                <li>Who attended your wedding?</li>
+                <li>Where does your husband live?</li>
+                <li>How often do you see each other?</li>
+              </ul>
+            </div>
+
+            <div class="question-category">
+              <h3>Daily Life Questions</h3>
+              <ul>
+                <li>Where do you and your husband live?</li>
+                <li>Do you live together?</li>
+                <li>What does your husband do for work?</li>
+                <li>What time does he usually go to work?</li>
+                <li>What do you usually do together?</li>
+                <li>How do you communicate when you are apart?</li>
+                <li>How often do you talk to each other?</li>
+              </ul>
+            </div>
+
+            <div class="question-category">
+              <h3>Financial Questions</h3>
+              <ul>
+                <li>Do you have a joint bank account?</li>
+                <li>Do you share any expenses?</li>
+                <li>Does your husband financially support you?</li>
+                <li>Do you have any joint bills?</li>
+                <li>Do you own any property together?</li>
+                <li>Do you have evidence of your shared finances?</li>
+              </ul>
+            </div>
+
+            <div class="question-category">
+              <h3>Proof and Evidence Questions</h3>
+              <ul>
+                <li>What documents can you provide?</li>
+                <li>Do you have photos together?</li>
+                <li>Do you have travel records?</li>
+                <li>Do you have messages or call records?</li>
+                <li>Do you have a marriage certificate?</li>
+                <li>What shows that you have lived together?</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- ANSWER PATTERNS SECTION -->
+        <section id="patterns" class="section-block" aria-labelledby="patterns-title">
+          <div class="section-heading"><p class="kicker">Useful answer patterns</p><h2 id="patterns-title">Use these sentence structures to answer naturally.</h2></div>
+
+          <div class="answer-pattern">
+            <div class="pattern-label">Example 1</div>
+            <div class="pattern-q"><strong>Question:</strong> How did you meet your husband?</div>
+            <div class="pattern-a"><strong>Answer:</strong> "We met through a mutual friend in 2022. We were introduced at a dinner party."</div>
+          </div>
+
+          <div class="answer-pattern">
+            <div class="pattern-label">Example 2</div>
+            <div class="pattern-q"><strong>Question:</strong> How long have you been together?</div>
+            <div class="pattern-a"><strong>Answer:</strong> "We've been together for about four years. We got married in 2024, so we've been married for less than a year."</div>
+          </div>
+
+          <div class="answer-pattern">
+            <div class="pattern-label">Example 3</div>
+            <div class="pattern-q"><strong>Question:</strong> How do you communicate when you're apart?</div>
+            <div class="pattern-a"><strong>Answer:</strong> "We usually talk on the phone or video call every day. We also message each other when we're at work."</div>
+          </div>
+
+          <div class="answer-pattern">
+            <div class="pattern-label">Example 4</div>
+            <div class="pattern-q"><strong>Question:</strong> What evidence do you have of your relationship?</div>
+            <div class="pattern-a"><strong>Answer:</strong> "We have photos together, our marriage certificate, travel records showing we've been to several countries together, and our phone records showing daily communication."</div>
+          </div>
+
+          <div class="answer-pattern">
+            <div class="pattern-label">Example 5</div>
+            <div class="pattern-q"><strong>Question:</strong> Do you share your finances?</div>
+            <div class="pattern-a"><strong>Answer:</strong> "Yes. We have a joint bank account for household expenses, and we both contribute to the household bills."</div>
+          </div>
+        </section>
+
+        <!-- GRAMMAR SECTION -->
+        <section id="grammar" class="section-block" aria-labelledby="grammar-title">
+          <div class="section-heading"><p class="kicker">Grammar focus</p><h2 id="grammar-title">How long have you... and When did you...</h2></div>
+
+          <div class="grammar-example">
+            <h3 class="grammar-heading">How long have you...? (Present perfect)</h3>
+            <p><strong>How long have you been together?</strong></p>
+            <p>→ "We've been together for four years."</p>
+            <p><strong>How long have you been married?</strong></p>
+            <p>→ "We've been married for two years."</p>
+            <p class="speak-instruction">Use "how long" to ask about the duration of something that started in the past and continues now.</p>
+          </div>
+
+          <div class="grammar-example">
+            <h3 class="grammar-heading">When did you...? (Past simple)</h3>
+            <p><strong>When did you get married?</strong></p>
+            <p>→ "We got married in 2024."</p>
+            <p><strong>When did you first meet?</strong></p>
+            <p>→ "We first met in 2020."</p>
+            <p class="speak-instruction">Use "when" to ask about the specific time or date of a completed action.</p>
+          </div>
+
+          <div class="grammar-example">
+            <h3 class="grammar-heading">The difference</h3>
+            <table style="width: 100%; border-collapse: collapse; margin-top: 12px;">
+              <tr style="background: var(--paper-deep);">
+                <td style="padding: 10px; border: 1px solid var(--line); font-weight: 700;">How long have you been together?</td>
+                <td style="padding: 10px; border: 1px solid var(--line);">Asks about the duration (started in the past, continues now)</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px; border: 1px solid var(--line); font-weight: 700;">When did you start dating?</td>
+                <td style="padding: 10px; border: 1px solid var(--line);">Asks about the specific date/time it began</td>
+              </tr>
+              <tr style="background: var(--paper-deep);">
+                <td style="padding: 10px; border: 1px solid var(--line);">Example: "We started dating in 2020. We got married in 2024. We've been married for two years."</td>
+                <td style="padding: 10px; border: 1px solid var(--line);">Shows all three: start date, marriage date, and current duration</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+
+        <!-- ROLEPLAY SECTION -->
+        <section id="roleplay" class="section-block" aria-labelledby="roleplay-title">
+          <div class="section-heading"><p class="kicker">Role-play practice</p><h2 id="roleplay-title">A sample immigration interview.</h2><p>The officer asks real questions. Notice how the applicant gives specific, honest answers with details.</p></div>
+
+          <div class="roleplay-dialog">
+            <div class="dialog-line">
+              <div class="dialog-speaker officer">Immigration Officer</div>
+              <div class="dialog-text">Good morning. I'd like to ask you some questions about your relationship with your husband.</div>
+            </div>
+            <div class="dialog-line">
+              <div class="dialog-speaker">Applicant</div>
+              <div class="dialog-text">Yes, of course.</div>
+            </div>
+            <div class="dialog-line">
+              <div class="dialog-speaker officer">Immigration Officer</div>
+              <div class="dialog-text">How did you meet your husband?</div>
+            </div>
+            <div class="dialog-line">
+              <div class="dialog-speaker">Applicant</div>
+              <div class="dialog-text">We met through a mutual friend at a dinner party in 2020. My friend introduced us, and we started talking.</div>
+            </div>
+            <div class="dialog-line">
+              <div class="dialog-speaker officer">Immigration Officer</div>
+              <div class="dialog-text">When did you start dating?</div>
+            </div>
+            <div class="dialog-line">
+              <div class="dialog-speaker">Applicant</div>
+              <div class="dialog-text">We started dating a few months later, around August 2020.</div>
+            </div>
+            <div class="dialog-line">
+              <div class="dialog-speaker officer">Immigration Officer</div>
+              <div class="dialog-text">How long have you been married?</div>
+            </div>
+            <div class="dialog-line">
+              <div class="dialog-speaker">Applicant</div>
+              <div class="dialog-text">We've been married for about two years. We got married in June 2022.</div>
+            </div>
+            <div class="dialog-line">
+              <div class="dialog-speaker officer">Immigration Officer</div>
+              <div class="dialog-text">Do you live together?</div>
+            </div>
+            <div class="dialog-line">
+              <div class="dialog-speaker">Applicant</div>
+              <div class="dialog-text">Yes, we do. We have a home together with our own furniture and household items.</div>
+            </div>
+            <div class="dialog-line">
+              <div class="dialog-speaker officer">Immigration Officer</div>
+              <div class="dialog-text">What does your husband do for work?</div>
+            </div>
+            <div class="dialog-line">
+              <div class="dialog-speaker">Applicant</div>
+              <div class="dialog-text">He is an IT technician. He works for a software company downtown. He usually goes to work at 8 in the morning.</div>
+            </div>
+            <div class="dialog-line">
+              <div class="dialog-speaker officer">Immigration Officer</div>
+              <div class="dialog-text">How do you communicate when you're apart?</div>
+            </div>
+            <div class="dialog-line">
+              <div class="dialog-speaker">Applicant</div>
+              <div class="dialog-text">We usually video call every evening for about an hour. We also message each other during the day. And we send photos and updates to each other.</div>
+            </div>
+            <div class="dialog-line">
+              <div class="dialog-speaker officer">Immigration Officer</div>
+              <div class="dialog-text">What evidence can you provide to prove your relationship?</div>
+            </div>
+            <div class="dialog-line">
+              <div class="dialog-speaker">Applicant</div>
+              <div class="dialog-text">We have our marriage certificate, hundreds of photos together, travel records from three trips we took together, our joint bank account statements, and message records showing we talk almost every day.</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CHALLENGE QUESTIONS SECTION -->
+        <section id="challenge" class="section-block" aria-labelledby="challenge-title">
+          <div class="section-heading"><p class="kicker">Speaking challenge</p><h2 id="challenge-title">Answer these questions yourself.</h2></div>
+          <div class="challenge-section">
+            <p class="challenge-intro">Try to answer each question without looking at the example first. Use your own real information. Do not memorize someone else's answer. The goal is to practice speaking naturally about your relationship.</p>
+            <div class="challenge-questions">
+              <div class="challenge-q">
+                <p><strong>What did you do together last weekend?</strong></p>
+              </div>
+              <div class="challenge-q">
+                <p><strong>What did you give your husband for his last birthday?</strong></p>
+              </div>
+              <div class="challenge-q">
+                <p><strong>What does your husband like to do in his free time?</strong></p>
+              </div>
+              <div class="challenge-q">
+                <p><strong>What are your plans for the future?</strong></p>
+              </div>
+              <div class="challenge-q">
+                <p><strong>Where do you plan to live in Australia?</strong></p>
+              </div>
+              <div class="challenge-q">
+                <p><strong>Who usually pays for household expenses?</strong></p>
+              </div>
+              <div class="challenge-q">
+                <p><strong>What do you usually do together after work?</strong></p>
+              </div>
+              <div class="challenge-q">
+                <p><strong>When was the last time you travelled together?</strong></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SPEAKING PRACTICE SECTION -->
+        <section id="speaking" class="section-block" aria-labelledby="speaking-title">
+          <div class="section-heading"><p class="kicker">Speaking practice</p><h2 id="speaking-title">Interview practice questions.</h2><p>Read each question. Speak your answer aloud. Then reveal an example answer to compare.</p></div>
+
+          <div class="speaking-practice">
+            <div class="practice-q-label">Question 1</div>
+            <p class="practice-question">How did you meet your husband?</p>
+            <p class="speak-instruction">Speak your answer aloud before clicking. Include: where, when, who was there, what was happening.</p>
+            <button class="reveal-answer-btn" type="button">Reveal answer</button>
+            <div class="practice-answer">
+              <div class="answer-label">Example answer</div>
+              <p>"We met at a university library in 2019. I was studying, and he asked if the seat next to me was free. We started talking and became friends first. After a few months of friendship, we decided to start dating."</p>
+            </div>
+          </div>
+
+          <div class="speaking-practice">
+            <div class="practice-q-label">Question 2</div>
+            <p class="practice-question">What is something you and your husband have done together that made you feel close?</p>
+            <p class="speak-instruction">Think of a specific memory. Describe the event, when it happened, and why it was important.</p>
+            <button class="reveal-answer-btn" type="button">Reveal answer</button>
+            <div class="practice-answer">
+              <div class="answer-label">Example answer</div>
+              <p>"We took a trip to Japan together for three weeks. We had saved money for the trip for almost a year. During the trip, we had to solve problems together when we got lost, and we supported each other. It made us realize we work well as a team, even when things don't go as planned."</p>
+            </div>
+          </div>
+
+          <div class="speaking-practice">
+            <div class="practice-q-label">Question 3</div>
+            <p class="practice-question">Tell me about the day you got married.</p>
+            <p class="speak-instruction">Describe the location, the people, the ceremony, and your feelings that day.</p>
+            <button class="reveal-answer-btn" type="button">Reveal answer</button>
+            <div class="practice-answer">
+              <div class="answer-label">Example answer</div>
+              <p>"We got married in a small ceremony in our city on June 15th, 2022. We had close family and about 50 friends. It was a beautiful day. We had a simple ceremony at a local venue. I wore a white dress, and he wore a suit. After the ceremony, we had a small reception with dinner and dancing. It was one of the happiest days of my life."</p>
+            </div>
+          </div>
+
+          <div class="speaking-practice">
+            <div class="practice-q-label">Question 4</div>
+            <p class="practice-question">What is your husband's favorite food, and why do you think he likes it?</p>
+            <p class="speak-instruction">Show that you know specific details about your husband's preferences.</p>
+            <button class="reveal-answer-btn" type="button">Reveal answer</button>
+            <div class="practice-answer">
+              <div class="answer-label">Example answer</div>
+              <p>"His favorite food is Thai curry. I think he loves it because it reminds him of his grandmother's cooking. His grandmother lived in Thailand, and she made similar dishes when he was a child. Now whenever we eat Thai curry together, he tells me stories about his childhood."</p>
+            </div>
+          </div>
+
+          <div class="speaking-practice">
+            <div class="practice-q-label">Question 5</div>
+            <p class="practice-question">How do you spend time together on a typical day?</p>
+            <p class="speak-instruction">Describe your daily routine, activities, and how you stay connected.</p>
+            <button class="reveal-answer-btn" type="button">Reveal answer</button>
+            <div class="practice-answer">
+              <div class="answer-label">Example answer</div>
+              <p>"We usually wake up together and have breakfast. He goes to work around 8 in the morning. I work from home, so we have lunch together sometimes. In the evening, we cook dinner together. After dinner, we watch a TV show or read while sitting next to each other. Before bed, we always talk about our day. On weekends, we go for walks, visit friends, or cook special meals together."</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- IMPORTANT NOTE SECTION -->
+        <section class="section-block" aria-labelledby="important-title">
+          <div class="important-note">
+            <p><strong id="important-title">Important:</strong> Always answer immigration questions truthfully and use your own real information. The example answers are only language examples to help you learn English. Never memorize these answers or pretend they are your story. Immigration officers can tell when answers are not genuine, and honesty is essential for your visa application. This lesson is for English practice only, not legal advice.</p>
+          </div>
+        </section>
+
+        <!-- FINAL ACTIONS -->
+        <section class="final-challenge" aria-labelledby="final-title">
+          <p class="kicker">Ready to practice?</p>
+          <h2 id="final-title">Your Next Step</h2>
+          <p>Use this lesson to practice speaking about your relationship. Answer the questions aloud, even when you are alone. Record yourself and listen back. Practice until you can answer naturally and confidently, using specific details about your own life.</p>
+          <div class="final-actions">
+            <a class="button button-light" href="../../index.html#resources">Back to English Practice Resources</a>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer id="resources" class="site-footer"><div><span class="brand-mark">T</span> TeeTalkEnglish</div><p>Practical English practice for real communication.</p><a href="#lesson-title">Back to top ↑</a></footer>
+</body>
+</html>

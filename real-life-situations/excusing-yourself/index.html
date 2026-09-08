@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn natural everyday English for stepping away or leaving politely.">
+  <title>Excusing Yourself: Leaving Politely | TeeTalkEnglish</title>
+  <link rel="stylesheet" href="../../assets/styles.css">
+  <script src="../../assets/script.js" defer></script>
+  <style>
+    .lesson-layout { max-width: 1200px; margin: 0 auto; padding: 50px 24px 0; display: grid; grid-template-columns: minmax(180px, 220px) minmax(0, 1fr); gap: 40px; }
+    .lesson-nav { position: sticky; top: 20px; align-self: start; }
+    .lesson-content { min-width: 0; }
+    .phrase-groups, .dialog-list, .activity-stack { display: grid; gap: 14px; }
+    .phrase-group, .activity { background: var(--white); border: 1px solid var(--line); padding: 20px; }
+    .phrase-group h3 { color: var(--teal-dark); margin: 0 0 10px; font-size: 17px; }
+    .phrase-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 7px; }
+    .phrase-list li { display: flex; justify-content: space-between; gap: 16px; padding-bottom: 7px; border-bottom: 1px solid var(--line); }
+    .phrase-list li:last-child { border-bottom: 0; padding-bottom: 0; }
+    .phrase-list strong { font: 17px var(--serif); font-weight: 400; }
+    .phrase-note { color: var(--ink-soft); font-size: 12px; text-align: right; }
+    .vocab-notes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .vocab-notes div, .politeness-card { background: var(--white); border: 1px solid var(--line); padding: 18px; }
+    .vocab-notes h3, .politeness-card h3 { color: var(--teal-dark); font-size: 16px; margin: 0 0 8px; }
+    .vocab-notes p { margin: 5px 0; color: var(--ink-soft); font-size: 13px; }
+    .politeness-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .politeness-card { border-top: 3px solid var(--coral); }.politeness-card:nth-child(2) { border-top-color: var(--teal); }.politeness-card:nth-child(3) { border-top-color: var(--yellow); }
+    .politeness-card p { margin: 6px 0; font: 16px var(--serif); }
+    .dialog-line { display: grid; grid-template-columns: 115px 1fr; gap: 14px; padding: 13px 15px; background: var(--white); border: 1px solid var(--line); }
+    .dialog-speaker { color: var(--coral); font-size: 12px; font-weight: 800; }.dialog-text { font: 16px/1.4 var(--serif); }
+    .activity h3 { margin: 0 0 6px; color: var(--teal-dark); font-size: 17px; }.activity-instruction { color: var(--ink-soft); font-size: 13px; margin-bottom: 14px; }
+    .match-grid, .choice-grid { display: grid; gap: 8px; }.match-grid { grid-template-columns: 1fr 1fr; }
+    .choice, .word-button { border: 1px solid var(--line); background: var(--paper); color: var(--ink); padding: 10px 12px; text-align: left; cursor: pointer; }
+    .choice:hover, .word-button:hover { border-color: var(--teal); }.choice.correct, .word-button.selected { background: #d9eee4; border-color: var(--teal); }.choice.incorrect { background: #f9e1d9; border-color: var(--coral); }
+    .feedback { min-height: 20px; color: var(--teal-dark); font-size: 12px; font-weight: 700; margin: 10px 0 0; }
+    .fill-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; font: 18px var(--serif); }.fill-input { width: 145px; border: 0; border-bottom: 2px solid var(--teal); background: transparent; padding: 4px; font: inherit; color: var(--ink); }
+    .word-bank { display: flex; flex-wrap: wrap; gap: 7px; margin: 13px 0; }.sentence-output { min-height: 27px; border-bottom: 1px solid var(--line); color: var(--teal-dark); font: 18px var(--serif); padding-bottom: 7px; }
+    .activity-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 13px; }.small-button { border: 0; background: var(--teal-dark); color: var(--white); padding: 9px 13px; font-size: 12px; font-weight: 800; cursor: pointer; }.small-button.secondary { background: var(--paper-deep); color: var(--teal-dark); }
+    .progress-wrap { max-width: 500px; margin-top: 22px; position: relative; z-index: 1; }.progress-label { display: flex; justify-content: space-between; color: #d6e5d9; font-size: 12px; margin-bottom: 6px; }.progress-track { height: 7px; background: rgba(255,255,255,.2); }.progress-fill { height: 100%; width: 0; background: var(--yellow); transition: width .25s ease; }
+    .quick-reference { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }.quick-reference div { background: var(--white); border: 1px solid var(--line); padding: 16px; }.quick-reference h3 { color: var(--teal-dark); margin: 0 0 7px; font-size: 15px; }.quick-reference p { margin: 4px 0; font: 15px var(--serif); }
+    @media (max-width: 850px) { .lesson-layout { grid-template-columns: 1fr; gap: 24px; padding-top: 40px; }.lesson-nav { position: static; }.politeness-grid { grid-template-columns: 1fr; }.quick-reference, .vocab-notes { grid-template-columns: 1fr; } }
+    @media (max-width: 600px) { .phrase-list li { display: block; }.phrase-note { display: block; text-align: left; margin-top: 3px; }.match-grid { grid-template-columns: 1fr; }.dialog-line { grid-template-columns: 75px 1fr; gap: 10px; padding: 11px; }.dialog-text { font-size: 15px; }.lesson-layout { padding-left: 20px; padding-right: 20px; } }
+  </style>
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      const completed = new Set();
+      const progressFill = document.querySelector('[data-progress-fill]');
+      const progressText = document.querySelector('[data-progress-text]');
+      const updateProgress = (id) => {
+        completed.add(id);
+        progressFill.style.width = `${completed.size / 6 * 100}%`;
+        progressText.textContent = `${completed.size} / 6 activities complete`;
+      };
+
+      const matchButtons = [...document.querySelectorAll('[data-match]')];
+      let selectedMatch = null;
+      matchButtons.forEach((button) => button.addEventListener('click', () => {
+        if (button.classList.contains('matched')) return;
+        if (!selectedMatch) { selectedMatch = button; button.classList.add('selected'); return; }
+        if (selectedMatch.dataset.match === button.dataset.match && selectedMatch !== button) {
+          selectedMatch.classList.remove('selected');
+          selectedMatch.classList.add('matched', 'correct');
+          button.classList.add('matched', 'correct');
+          selectedMatch = null;
+          if (matchButtons.every((item) => item.classList.contains('matched'))) { document.querySelector('[data-match-feedback]').textContent = 'Great match.'; updateProgress('match'); }
+        } else {
+          selectedMatch.classList.remove('selected');
+          selectedMatch = null;
+          document.querySelector('[data-match-feedback]').textContent = 'That pair does not match. Try again.';
+        }
+      }));
+
+      document.querySelectorAll('[data-choice-group]').forEach((group) => group.querySelectorAll('[data-answer]').forEach((button) => button.addEventListener('click', () => {
+        const correct = button.dataset.answer === 'correct';
+        group.querySelectorAll('.choice').forEach((choice) => choice.classList.remove('correct', 'incorrect'));
+        button.classList.add(correct ? 'correct' : 'incorrect');
+        group.querySelector('[data-choice-feedback]').textContent = correct ? button.dataset.reason : 'Think about the situation and the relationship.';
+        if (correct) updateProgress(group.dataset.choiceGroup);
+      })));
+
+      document.querySelector('[data-fill-check]').addEventListener('click', () => {
+        const correct = document.querySelector('[data-fill-input]').value.trim().toLowerCase() === 'came up';
+        document.querySelector('[data-fill-feedback]').textContent = correct ? 'Correct: "Something came up."' : 'Try "came up".';
+        if (correct) updateProgress('fill');
+      });
+
+      const sentence = document.querySelector('[data-sentence-output]');
+      document.querySelectorAll('[data-word]').forEach((button) => button.addEventListener('click', () => {
+        button.classList.toggle('selected');
+        sentence.textContent = [...document.querySelectorAll('[data-word].selected')].map((word) => word.dataset.word).join(' ');
+      }));
+      document.querySelector('[data-sentence-check]').addEventListener('click', () => {
+        const answer = sentence.textContent.replace(/\s+/g, ' ').trim().toLowerCase();
+        const correct = answer === 'it was great talking with you, but i need to get going';
+        document.querySelector('[data-sentence-feedback]').textContent = correct ? 'Correct. That is a warm goodbye.' : 'Keep arranging the sentence.';
+        if (correct) updateProgress('rearrange');
+      });
+
+      document.querySelector('[data-speaking-done]').addEventListener('click', (event) => { event.target.textContent = 'Speaking practice complete'; event.target.disabled = true; updateProgress('speaking'); });
+    });
+  </script>
+</head>
+<body>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="../../index.html" aria-label="TeeTalkEnglish home"><span class="brand-mark">T</span><span>TeeTalk<span>English</span></span></a><a class="back-link" href="../index.html">Back to Common Conversations <span aria-hidden="true">↗</span></a></div></header>
+  <main>
+    <section class="hero" aria-labelledby="lesson-title"><div class="hero-inner"><div class="eyebrow">Everyday English <span></span> 10–15 minutes</div><h1 id="lesson-title">Excusing Yourself: <em>Leaving Politely</em></h1><p class="hero-lede">Learn how to step away or leave a conversation politely, whether you need a quick break, have somewhere to be, or prefer to keep your reason private.</p><div class="hero-actions"><a class="button button-primary" href="#goal">Start the lesson <span aria-hidden="true">↓</span></a><a class="text-link" href="../../index.html#resources">Back to resources <span aria-hidden="true">↗</span></a></div><div class="lesson-meta"><span class="meta-dot"></span> Beginner friendly <span class="meta-divider"></span> Common conversations</div><div class="progress-wrap" aria-live="polite"><div class="progress-label"><span>Lesson progress</span><span data-progress-text>0 / 6 activities complete</span></div><div class="progress-track"><div class="progress-fill" data-progress-fill></div></div></div></div></section>
+    <div class="lesson-layout">
+      <aside class="lesson-nav" aria-label="Lesson sections"><p class="nav-label">In this lesson</p><a href="#goal">01 <span>Learning goal</span></a><a href="#phrases">02 <span>Useful phrases</span></a><a href="#language">03 <span>Language notes</span></a><a href="#politeness">04 <span>Politeness levels</span></a><a href="#dialogues">05 <span>Real-life dialogues</span></a><a href="#practice">06 <span>Practice</span></a><a href="#reference">07 <span>Quick reference</span></a></aside>
+      <article class="lesson-content">
+        <section id="goal" class="intro-section" aria-labelledby="goal-title"><div class="section-number">01</div><div><p class="kicker">Learning goal</p><h2 id="goal-title">Leave clearly, kindly, and naturally.</h2><p>Learn different ways to excuse yourself when you need to step away or leave. Choose a phrase based on urgency, politeness, and how much detail you want to give.</p></div></section>
+
+        <section id="phrases" class="section-block" aria-labelledby="phrases-title"><div class="section-heading"><p class="kicker">Useful phrases</p><h2 id="phrases-title">Keep the reason short and natural.</h2></div><div class="phrase-groups">
+          <div class="phrase-group"><h3>Step away briefly</h3><ul class="phrase-list"><li><strong>Excuse me, I'll be right back.</strong></li><li><strong>Can you give me a minute?</strong></li><li><strong>I just need to step away for a moment.</strong></li></ul><p class="phrase-note" style="text-align:left;margin:10px 0 0;">Use these for the bathroom, getting something, taking a call, or speaking privately.</p></div>
+          <div class="phrase-group"><h3>Leave</h3><ul class="phrase-list"><li><strong>I need to get going.</strong></li><li><strong>I have to head out.</strong></li><li><strong>I should probably get going.</strong></li><li><strong>I have to run.</strong><span class="phrase-note">casual</span></li></ul></div>
+          <div class="phrase-group"><h3>Give a reason</h3><ul class="phrase-list"><li><strong>Something came up.</strong></li><li><strong>I need to take care of something.</strong></li><li><strong>I have an appointment.</strong></li><li><strong>Something urgent came up at home.</strong></li></ul></div>
+          <div class="phrase-group"><h3>Keep the reason private</h3><ul class="phrase-list"><li><strong>I have something I need to take care of.</strong></li><li><strong>I have a personal matter to deal with.</strong></li><li><strong>I'm sorry, but I can't stay.</strong></li></ul></div>
+        </div></section>
+
+        <section id="language" class="section-block" aria-labelledby="language-title"><div class="section-heading"><p class="kicker">Language notes</p><h2 id="language-title">Small words change the feeling.</h2></div><div class="vocab-notes"><div><h3>Useful starters</h3><p><strong>Excuse me</strong> = a polite way to interrupt or get attention.</p><p><strong>Sorry</strong> = common when interrupting or leaving.</p><p><strong>I need to...</strong> = expresses a need.</p><p><strong>I have to...</strong> = a stronger sense of necessity.</p></div><div><h3>Useful meanings</h3><p><strong>I should...</strong> = softer.</p><p><strong>Something came up</strong> = an unexpected situation happened.</p><p><strong>I have to run</strong> = a casual way to say “I need to leave.”</p></div></div></section>
+
+        <section id="politeness" class="section-block" aria-labelledby="politeness-title"><div class="section-heading"><p class="kicker">Politeness levels</p><h2 id="politeness-title">Match your words to the relationship.</h2></div><div class="politeness-grid"><div class="politeness-card"><h3>Casual</h3><p>“I have to run.”</p><p>“Give me a second.”</p></div><div class="politeness-card"><h3>Neutral</h3><p>“I need to get going.”</p><p>“Excuse me, I'll be right back.”</p></div><div class="politeness-card"><h3>Polite</h3><p>“Could you give me a minute?”</p><p>“I'm afraid I have to leave early.”</p></div></div></section>
+
+        <section id="dialogues" class="section-block" aria-labelledby="dialogues-title"><div class="section-heading"><p class="kicker">Real-life dialogues</p><h2 id="dialogues-title">See the phrases in context.</h2></div><div class="dialog-list">
+          <div class="dialog-line"><span class="dialog-speaker">Bathroom / break</span><span class="dialog-text"><strong>A:</strong> “Excuse me, I'll be right back. I just need to step away for a moment.”<br><strong>B:</strong> “Sure, no problem.”</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Important call</span><span class="dialog-text"><strong>A:</strong> “Sorry, I need to take this call. Do you mind if I step outside?”<br><strong>B:</strong> “Of course. We'll wait for you.”</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Going home early</span><span class="dialog-text"><strong>A:</strong> “I'm afraid I have to leave early. I'm not feeling very well.”<br><strong>B:</strong> “I'm sorry to hear that. Take care.”</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Urgent at home</span><span class="dialog-text"><strong>A:</strong> “Something urgent came up at home, so I need to leave.”<br><strong>B:</strong> “I hope everything is all right.”</span></div>
+          <div class="dialog-line"><span class="dialog-speaker">Ending a chat</span><span class="dialog-text"><strong>A:</strong> “It was great talking with you, but I need to get going.”<br><strong>B:</strong> “It was great talking with you too. See you later!”</span></div>
+        </div></section>
+
+        <section id="practice" class="section-block" aria-labelledby="practice-title"><div class="section-heading"><p class="kicker">Interactive practice</p><h2 id="practice-title">Choose the phrase that fits.</h2><p>Complete all six activities. Each one has a different focus.</p></div><div class="activity-stack">
+          <div class="activity"><h3>1. Match phrases to meanings</h3><p class="activity-instruction">Match all four pairs.</p><div class="match-grid"><button class="choice" type="button" data-match="unexpected">Something came up</button><button class="choice" type="button" data-match="quick">I have to run</button><button class="choice" type="button" data-match="unexpected">an unexpected situation happened</button><button class="choice" type="button" data-match="quick">leave quickly</button><button class="choice" type="button" data-match="return">I'll be right back</button><button class="choice" type="button" data-match="return">come back soon</button><button class="choice" type="button" data-match="private">I have a personal matter</button><button class="choice" type="button" data-match="private">keep the reason private</button></div><p class="feedback" data-match-feedback></p></div>
+          <div class="activity"><h3>2. Choose the best phrase</h3><p class="activity-instruction">You are talking to a friend, but you suddenly need to leave. Which answer sounds natural and soft?</p><div class="choice-grid" data-choice-group="best"><button class="choice" type="button" data-answer="correct" data-reason="Correct. “I should probably get going” is natural and soft with a friend.">I should probably get going.</button><button class="choice" type="button" data-answer="wrong">The meeting is tomorrow.</button><button class="choice" type="button" data-answer="wrong">I request an immediate departure.</button><p class="feedback" data-choice-feedback></p></div></div>
+          <div class="activity"><h3>3. Choose the politeness level</h3><p class="activity-instruction">You are speaking to someone you do not know well. Which phrase is the best choice?</p><div class="choice-grid" data-choice-group="level"><button class="choice" type="button" data-answer="wrong">Give me a second.</button><button class="choice" type="button" data-answer="correct" data-reason="Correct. “Could you give me a minute?” is polite without sounding formal.">Could you give me a minute?</button><button class="choice" type="button" data-answer="wrong">I have to run.</button><p class="feedback" data-choice-feedback></p></div></div>
+          <div class="activity"><h3>4. Fill in “Something came up”</h3><p class="activity-instruction">Complete: “Something ______ ______, so I need to leave.”</p><div class="fill-row"><span>Something</span><input class="fill-input" data-fill-input aria-label="Missing words"><span>, so I need to leave.</span></div><div class="activity-actions"><button class="small-button" type="button" data-fill-check>Check answer</button></div><p class="feedback" data-fill-feedback></p></div>
+          <div class="activity"><h3>5. Rearrange the goodbye</h3><p class="activity-instruction">Build a warm way to end a conversation.</p><div class="sentence-output" data-sentence-output aria-live="polite"></div><div class="word-bank"><button class="word-button" type="button" data-word="It">It</button><button class="word-button" type="button" data-word="was">was</button><button class="word-button" type="button" data-word="great">great</button><button class="word-button" type="button" data-word="talking">talking</button><button class="word-button" type="button" data-word="with">with</button><button class="word-button" type="button" data-word="you,">you,</button><button class="word-button" type="button" data-word="but">but</button><button class="word-button" type="button" data-word="I">I</button><button class="word-button" type="button" data-word="need">need</button><button class="word-button" type="button" data-word="to">to</button><button class="word-button" type="button" data-word="get">get</button><button class="word-button" type="button" data-word="going">going</button></div><div class="activity-actions"><button class="small-button" type="button" data-sentence-check>Check sentence</button><button class="small-button secondary" type="button" onclick="location.reload()">Reset</button></div><p class="feedback" data-sentence-feedback></p></div>
+          <div class="activity"><h3>6. Speaking practice</h3><p class="activity-instruction">Say these aloud: “It was great talking with you, but I need to get going.” Then try: “Something came up, so I need to leave.”</p><button class="small-button" type="button" data-speaking-done>I've practised speaking</button><p class="feedback">Keep your voice warm and your reason short.</p></div>
+        </div></section>
+
+        <section id="reference" class="section-block quick-section" aria-labelledby="reference-title"><div class="section-heading"><p class="kicker">Quick reference</p><h2 id="reference-title">Useful phrases at a glance.</h2></div><div class="quick-reference"><div><h3>Step away</h3><p>“Excuse me, I'll be right back.”</p><p>“Can you give me a minute?”</p></div><div><h3>Leave</h3><p>“I need to get going.”</p><p>“I have to head out.”</p></div><div><h3>Give a reason</h3><p>“Something came up.”</p><p>“I have an appointment.”</p></div><div><h3>Keep it private</h3><p>“I have something I need to take care of.”</p><p>“I'm sorry, but I can't stay.”</p></div></div></section>
+
+        <section class="final-challenge" aria-labelledby="final-title"><p class="kicker">Your next conversation</p><h2 id="final-title">Leave on a friendly note.</h2><p>A short reason, a polite phrase, and a warm goodbye are usually enough.</p><div class="final-prompt"><p>“It was great talking with you, but I need to get going.”</p><button class="button button-light copy-button" type="button" data-copy="It was great talking with you, but I need to get going.">Copy phrase</button></div><div class="final-actions"><a class="button button-light" href="../index.html">More common conversations <span aria-hidden="true">↗</span></a><a class="final-resource-link" href="../../index.html#resources">Back to resources</a></div></section>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer"><div><span class="brand-mark">T</span> TeeTalkEnglish</div><p>Practical English practice for real communication.</p><a href="#lesson-title">Back to top ↑</a></footer>
+</body>
+</html>

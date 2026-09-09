@@ -1,0 +1,749 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn natural English phrases for setting boundaries, ending uncomfortable conversations, and leaving difficult situations politely and safely.">
+  <title>Getting Out of Uncomfortable Situations Politely | TeeTalkEnglish</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script src="../assets/script.js" defer></script>
+  <style>
+    .lesson-layout { max-width: 1200px; margin: 0 auto; padding: 50px 24px 0; display: grid; grid-template-columns: minmax(180px, 220px) minmax(0, 1fr); gap: 40px; }
+    .lesson-nav { position: sticky; top: 20px; align-self: start; }
+    .lesson-content { min-width: 0; }
+    .hero-reminder {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 18px;
+      padding: 12px 18px;
+      background: rgba(244, 204, 112, 0.18);
+      border: 1px solid rgba(244, 204, 112, 0.45);
+      color: var(--white);
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 0.04em;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-reminder::before {
+      content: "!";
+      display: inline-grid;
+      place-items: center;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--yellow);
+      color: var(--teal-dark);
+      font-size: 13px;
+      line-height: 1;
+    }
+    .section-heading { margin-bottom: 26px; }
+    .section-heading p:not(.kicker) { color: var(--ink-soft); }
+    .intro-callout {
+      background: var(--white);
+      border: 1px solid var(--line);
+      padding: 22px 24px;
+      margin-top: 18px;
+    }
+    .intro-callout strong { color: var(--teal-dark); }
+    .quick-grid, .phrase-groups, .practice-stack, .workplace-grid, .talk-grid, .final-models, .safety-box { display: grid; gap: 14px; }
+    .phrase-group, .practice-card, .workplace-card, .talk-card, .safety-box, .model-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      padding: 20px;
+    }
+    .phrase-group h3, .practice-card h3, .workplace-card h3, .talk-card h3 { color: var(--teal-dark); margin: 0 0 12px; font-size: 17px; }
+    .phrase-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+    .phrase-list li {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+      align-items: baseline;
+    }
+    .phrase-list li:last-child { border-bottom: 0; padding-bottom: 0; }
+    .phrase-list strong { font: 16px/1.5 var(--serif); font-weight: 400; }
+    .phrase-list span {
+      color: var(--ink-soft);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .phrase-note { color: var(--ink-soft); font-size: 12px; margin-top: 10px; }
+    .politeness-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .politeness-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-top: 4px solid var(--coral);
+      padding: 18px;
+    }
+    .politeness-card:nth-child(2) { border-top-color: var(--teal); }
+    .politeness-card:nth-child(3) { border-top-color: var(--yellow); }
+    .politeness-card h3 { margin: 0 0 10px; color: var(--teal-dark); font-size: 16px; }
+    .politeness-card p { margin: 6px 0; font: 16px/1.5 var(--serif); }
+    .example-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 12px;
+    }
+    .status-box {
+      background: var(--white);
+      border: 1px solid var(--line);
+      padding: 18px;
+    }
+    .status-box .label {
+      color: var(--coral);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+    .status-box p {
+      margin: 0;
+      font: 18px/1.5 var(--serif);
+    }
+    .status-box small {
+      display: block;
+      color: var(--ink-soft);
+      margin-top: 10px;
+      font-size: 12px;
+    }
+    .workplace-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .workplace-card ul { margin: 0; padding-left: 18px; color: var(--ink-soft); }
+    .workplace-card li + li { margin-top: 7px; }
+    .quiz-list { display: grid; gap: 18px; }
+    .quiz-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      padding: 22px;
+    }
+    .quiz-card h3 { color: var(--teal-dark); margin: 0 0 10px; font-size: 17px; }
+    .quiz-context { color: var(--ink-soft); margin: 0 0 16px; font-size: 14px; }
+    .answer-grid { display: grid; gap: 10px; }
+    .answer-option {
+      width: 100%;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      color: var(--ink);
+      padding: 12px 14px;
+      text-align: left;
+      cursor: pointer;
+      transition: border-color .2s ease, transform .2s ease, background .2s ease;
+    }
+    .answer-option:hover:enabled { border-color: var(--teal); transform: translateY(-1px); }
+    .answer-option.selected { border-color: var(--teal); background: #edf9f5; }
+    .answer-option.correct { background: #dff5e7; border-color: var(--teal); }
+    .answer-option.incorrect { background: #fbe6df; border-color: var(--coral); }
+    .answer-option:disabled { cursor: default; }
+    .quiz-feedback {
+      min-height: 24px;
+      margin-top: 12px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .quiz-feedback.success { color: var(--teal-dark); }
+    .quiz-feedback.error { color: var(--coral); }
+    .quiz-explanation {
+      color: var(--ink-soft);
+      margin-top: 8px;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+    .quick-practice { display: grid; gap: 12px; }
+    .mini-practice {
+      background: var(--white);
+      border: 1px solid var(--line);
+      padding: 18px;
+    }
+    .mini-practice h3 { margin: 0 0 10px; color: var(--teal-dark); font-size: 16px; }
+    .mini-practice p { margin: 0 0 14px; color: var(--ink-soft); font-size: 13px; }
+    .mini-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .mini-option {
+      border: 1px solid var(--line);
+      background: var(--paper);
+      padding: 9px 12px;
+      cursor: pointer;
+    }
+    .mini-option.correct { background: #dff5e7; border-color: var(--teal); }
+    .mini-option.incorrect { background: #fbe6df; border-color: var(--coral); }
+    .mini-feedback {
+      min-height: 22px;
+      font-size: 12px;
+      font-weight: 800;
+      margin-top: 9px;
+    }
+    .speak-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+    .speak-list li {
+      background: var(--white);
+      border: 1px solid var(--line);
+      padding: 16px 18px;
+      font: 16px/1.5 var(--serif);
+    }
+    .model-answer-box {
+      background: var(--white);
+      border: 1px solid var(--line);
+      padding: 18px;
+    }
+    .model-answer-box p { margin: 0 0 12px; color: var(--ink-soft); }
+    .final-models { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .model-card {
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: var(--white);
+    }
+    .model-card strong { display: block; margin-bottom: 8px; color: var(--yellow); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; }
+    .model-card p { margin: 0; font: 17px/1.5 var(--serif); }
+    .safety-box {
+      background: #fffaf3;
+      border-left: 4px solid var(--yellow);
+    }
+    .safety-box h3 { color: var(--teal-dark); margin: 0 0 12px; font-size: 18px; }
+    .safety-box ul { margin: 12px 0 0; padding-left: 18px; color: var(--ink-soft); }
+    .final-takeaway {
+      background: var(--teal-dark);
+      color: var(--white);
+      padding: 32px 26px;
+      margin-top: 34px;
+    }
+    .final-takeaway h3 { color: var(--yellow); margin: 0 0 14px; font-size: 18px; }
+    .final-takeaway p { margin: 0; font: 22px/1.5 var(--serif); }
+    .progress-wrap { max-width: 500px; margin-top: 22px; position: relative; z-index: 1; }
+    .progress-label { display: flex; justify-content: space-between; color: #d6e5d9; font-size: 12px; margin-bottom: 6px; }
+    .progress-track { height: 7px; background: rgba(255,255,255,.2); }
+    .progress-fill { height: 100%; width: 0; background: var(--yellow); transition: width .25s ease; }
+    @media (max-width: 850px) {
+      .lesson-layout { grid-template-columns: 1fr; gap: 24px; padding-top: 40px; }
+      .lesson-nav { position: static; }
+      .workplace-grid, .politeness-grid, .final-models { grid-template-columns: 1fr; }
+      .example-row { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .lesson-layout { padding-left: 20px; padding-right: 20px; }
+      .phrase-list li { display: block; }
+      .phrase-list span { display: block; margin-top: 5px; }
+      .answer-option { padding: 11px 12px; }
+    }
+  </style>
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      const totalScenarios = document.querySelectorAll('[data-quiz]').length;
+      const progressFill = document.querySelector('[data-progress-fill]');
+      const progressText = document.querySelector('[data-progress-text]');
+      const completed = new Set();
+
+      const updateProgress = () => {
+        if (!progressFill || !progressText) return;
+        const percent = (completed.size / totalScenarios) * 100;
+        progressFill.style.width = `${percent}%`;
+        progressText.textContent = `${completed.size} / ${totalScenarios} scenarios complete`;
+      };
+
+      document.querySelectorAll('[data-quiz]').forEach((card) => {
+        const options = card.querySelectorAll('.answer-option');
+
+        options.forEach((option) => {
+          option.addEventListener('click', () => {
+            if (option.disabled) return;
+
+            const isCorrect = option.dataset.correct === 'true';
+            options.forEach((btn) => {
+              btn.disabled = true;
+              btn.classList.remove('selected');
+              if (btn.dataset.correct === 'true') {
+                btn.classList.add('correct');
+              }
+            });
+            option.classList.add('selected');
+            if (!isCorrect) {
+              option.classList.add('incorrect');
+            }
+
+            const feedback = card.querySelector('.quiz-feedback');
+            const explanation = card.querySelector('.quiz-explanation');
+            const text = isCorrect ? 'Correct — that is the most natural and clear response.' : 'Not quite — the best answer stays polite while setting a clear boundary.';
+            feedback.textContent = text;
+            feedback.classList.toggle('success', isCorrect);
+            feedback.classList.toggle('error', !isCorrect);
+            explanation.textContent = option.dataset.explanation || '';
+
+            if (isCorrect) {
+              completed.add(card.dataset.quiz);
+              updateProgress();
+            }
+          });
+        });
+      });
+
+      document.querySelectorAll('[data-quick-practice]').forEach((card) => {
+        const buttons = card.querySelectorAll('.mini-option');
+        buttons.forEach((button) => {
+          button.addEventListener('click', () => {
+            if (button.disabled) return;
+            buttons.forEach((btn) => { btn.disabled = true; });
+            const isCorrect = button.dataset.correct === 'true';
+            button.classList.add(isCorrect ? 'correct' : 'incorrect');
+            const feedback = card.querySelector('.mini-feedback');
+            feedback.textContent = isCorrect
+              ? 'Correct. That phrase fits the situation.'
+              : 'Try a phrase that is more direct and polite.';
+          });
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../index.html" aria-label="TeeTalkEnglish home"><span class="brand-mark">T</span><span>TeeTalk<span>English</span></span></a>
+      <a class="back-link" href="index.html">Back to Common Conversations <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="lesson-title">
+      <div class="hero-inner">
+        <div class="eyebrow">Everyday English <span></span> 10–15 minutes</div>
+        <h1 id="lesson-title">Getting Out of <em>Uncomfortable Situations</em> Politely</h1>
+        <p class="hero-lede">Learn how to end conversations, set boundaries, and leave uncomfortable situations naturally.</p>
+        <div class="hero-reminder">You are allowed to leave an uncomfortable situation.</div>
+        <div class="progress-wrap" aria-live="polite">
+          <div class="progress-label"><span>Quiz progress</span><span data-progress-text>0 / 10 scenarios complete</span></div>
+          <div class="progress-track"><div class="progress-fill" data-progress-fill></div></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="lesson-layout">
+      <aside class="lesson-nav" aria-label="Lesson sections">
+        <p class="nav-label">In this lesson</p>
+        <a href="#why">01 <span>Why this matters</span></a>
+        <a href="#phrases">02 <span>Useful phrases</span></a>
+        <a href="#progression">03 <span>Polite → Firm → Leave</span></a>
+        <a href="#workplace">04 <span>Workplace situations</span></a>
+        <a href="#quiz">05 <span>What’s the Best Response?</span></a>
+        <a href="#quick-practice">06 <span>Quick phrase practice</span></a>
+        <a href="#speaking">07 <span>Speaking practice</span></a>
+        <a href="#challenge">08 <span>Real-life challenge</span></a>
+        <a href="#safety">09 <span>Safety reminder</span></a>
+        <a href="#takeaway">10 <span>Final takeaway</span></a>
+      </aside>
+
+      <article class="lesson-content">
+        <section id="why" class="section-block" aria-labelledby="why-title">
+          <div class="section-heading">
+            <p class="kicker">Why this matters</p>
+            <h2 id="why-title">Being polite does not mean staying in an uncomfortable situation.</h2>
+          </div>
+          <div class="quick-grid">
+            <div class="intro-callout">
+              <strong>Important:</strong> In a new workplace and a new country, you may want to be friendly and polite. But being friendly does not mean being available. Being polite does not mean saying yes. You do not have to answer every personal question. You do not have to continue every conversation. You do not have to stay somewhere that makes you uncomfortable.
+            </div>
+          </div>
+        </section>
+
+        <section id="phrases" class="section-block" aria-labelledby="phrases-title">
+          <div class="section-heading">
+            <p class="kicker">Useful phrases</p>
+            <h2 id="phrases-title">Choose the phrase that matches the moment.</h2>
+          </div>
+          <div class="phrase-groups">
+            <div class="phrase-group">
+              <h3>A. Getting back to work</h3>
+              <ul class="phrase-list">
+                <li><strong>“Sorry, I need to get back to work.”</strong><span>return</span></li>
+                <li><strong>“I’m a bit busy right now.”</strong><span>brief</span></li>
+                <li><strong>“I need to finish this first.”</strong><span>clear</span></li>
+                <li><strong>“I need to get back to my station.”</strong><span>workplace</span></li>
+                <li><strong>“Can we talk later?”</strong><span>soft</span></li>
+                <li><strong>“I’ll catch up with you later.”</strong><span>friendly</span></li>
+              </ul>
+            </div>
+
+            <div class="phrase-group">
+              <h3>B. Polite exit</h3>
+              <ul class="phrase-list">
+                <li><strong>“Excuse me, I need to step away for a moment.”</strong><span>brief</span></li>
+                <li><strong>“Sorry, I need to get going.”</strong><span>exit</span></li>
+                <li><strong>“I’m going to head out.”</strong><span>casual</span></li>
+                <li><strong>“It was nice talking to you.”</strong><span>warm</span></li>
+                <li><strong>“I’m going to catch up with my friends.”</strong><span>distance</span></li>
+              </ul>
+            </div>
+
+            <div class="phrase-group">
+              <h3>C. Creating distance</h3>
+              <ul class="phrase-list">
+                <li><strong>“I need to make a phone call.”</strong><span>reason</span></li>
+                <li><strong>“I have something I need to take care of.”</strong><span>private</span></li>
+                <li><strong>“I’m going to check on something.”</strong><span>busy</span></li>
+                <li><strong>“Let me get back to my friends.”</strong><span>exit</span></li>
+              </ul>
+            </div>
+
+            <div class="phrase-group">
+              <h3>D. Personal questions</h3>
+              <ul class="phrase-list">
+                <li><strong>“I’d rather not talk about that.”</strong><span>soft</span></li>
+                <li><strong>“I’d prefer to keep that private.”</strong><span>firm</span></li>
+                <li><strong>“I’m not comfortable talking about that.”</strong><span>clear</span></li>
+                <li><strong>“Anyway, I should get going.”</strong><span>leave</span></li>
+              </ul>
+            </div>
+
+            <div class="phrase-group">
+              <h3>E. When someone won’t stop</h3>
+              <ul class="phrase-list">
+                <li><strong>“Sorry, I really have to go.”</strong><span>firm</span></li>
+                <li><strong>“I need to get back to what I was doing.”</strong><span>direct</span></li>
+                <li><strong>“I’m going to leave now. Take care.”</strong><span>final</span></li>
+              </ul>
+            </div>
+
+            <div class="phrase-group">
+              <h3>F. Unwanted approach</h3>
+              <ul class="phrase-list">
+                <li><strong>“Sorry, I’m not interested.”</strong><span>clear</span></li>
+                <li><strong>“I’d rather be left alone.”</strong><span>boundary</span></li>
+                <li><strong>“Excuse me, I need some space.”</strong><span>distance</span></li>
+              </ul>
+            </div>
+
+            <div class="phrase-group">
+              <h3>G. Pushy people / salespeople</h3>
+              <ul class="phrase-list">
+                <li><strong>“No, thank you. I’m just looking.”</strong><span>polite</span></li>
+                <li><strong>“No, thanks.”</strong><span>short</span></li>
+                <li><strong>“I’m not interested, thank you.”</strong><span>firm</span></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="progression" class="section-block" aria-labelledby="progression-title">
+          <div class="section-heading">
+            <p class="kicker">Polite → Firm → Leave</p>
+            <h2 id="progression-title">You do not have to jump straight to the strongest response.</h2>
+          </div>
+          <div class="example-row">
+            <div class="status-box">
+              <span class="label">Example 1</span>
+              <p><strong>Polite:</strong> “Sorry, I need to get back to work.”</p>
+              <small>Then: “I need to finish this first.”</small>
+            </div>
+            <div class="status-box">
+              <span class="label">Example 2</span>
+              <p><strong>Firm:</strong> “I’d prefer to keep that private.”</p>
+              <small>Then: “I’m not comfortable discussing that.”</small>
+            </div>
+            <div class="status-box">
+              <span class="label">Example 3</span>
+              <p><strong>Final:</strong> “I need to leave now. Take care.”</p>
+              <small>Use this when the person is still not listening.</small>
+            </div>
+          </div>
+          <div class="intro-callout" style="margin-top: 16px;">
+            Start with a polite phrase. If the person keeps going, become clearer. If the situation is uncomfortable or unsafe, leave without explaining too much.
+          </div>
+        </section>
+
+        <section id="workplace" class="section-block" aria-labelledby="workplace-title">
+          <div class="section-heading">
+            <p class="kicker">Workplace situations</p>
+            <h2 id="workplace-title">Useful in a real Australian workplace.</h2>
+          </div>
+          <div class="workplace-grid">
+            <div class="workplace-card">
+              <h3>Common situations</h3>
+              <ul>
+                <li>A coworker talks too much while you are working.</li>
+                <li>A coworker interrupts you repeatedly.</li>
+                <li>A coworker asks how much money you make.</li>
+                <li>A coworker asks intrusive questions about your marriage.</li>
+                <li>A coworker makes an inappropriate joke or comment.</li>
+                <li>A coworker keeps talking when you need to return to your station.</li>
+              </ul>
+            </div>
+            <div class="workplace-card">
+              <h3>More examples</h3>
+              <ul>
+                <li>Someone keeps teasing you.</li>
+                <li>Someone stands too close and makes you uncomfortable.</li>
+                <li>Someone wants to keep talking after work when you want to go home.</li>
+                <li>A salesperson keeps pressuring you.</li>
+                <li>A stranger does not take a hint.</li>
+                <li>Someone asks you to do something you do not want to do.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="quiz" class="section-block" aria-labelledby="quiz-title">
+          <div class="section-heading">
+            <p class="kicker">Main activity</p>
+            <h2 id="quiz-title">What’s the Best Response?</h2>
+          </div>
+
+          <div class="quiz-list">
+            <div class="quiz-card" data-quiz="q1">
+              <h3>Scenario 1 — Talking coworker</h3>
+              <p class="quiz-context">You are working and a coworker keeps talking to you.</p>
+              <div class="answer-grid">
+                <button type="button" class="answer-option" data-correct="false" data-explanation="“Stop talking to me” is too blunt and may create conflict. A polite return-to-work phrase is more effective.">A. “Stop talking to me.”</button>
+                <button type="button" class="answer-option" data-correct="true" data-explanation="This is polite but clear. It tells the person you need to return to work without creating extra conflict.">B. “I need to get back to work. We can talk later.”</button>
+                <button type="button" class="answer-option" data-correct="false" data-explanation="Ignoring the person completely may not be effective if they keep talking. A direct but polite exit is better.">C. Ignore them completely.</button>
+              </div>
+              <div class="quiz-feedback" aria-live="polite"></div>
+              <div class="quiz-explanation"></div>
+            </div>
+
+            <div class="quiz-card" data-quiz="q2">
+              <h3>Scenario 2 — Personal question</h3>
+              <p class="quiz-context">A coworker asks: “How much money do you make?”</p>
+              <div class="answer-grid">
+                <button type="button" class="answer-option" data-correct="false" data-explanation="This sounds aggressive and may escalate the situation. A calm boundary is more practical.">A. “Why do you care?”</button>
+                <button type="button" class="answer-option" data-correct="false" data-explanation="This is strong and may create conflict, even though it sets a boundary. A calmer response is usually better first.">B. “That’s none of your business.”</button>
+                <button type="button" class="answer-option" data-correct="true" data-explanation="This sets a clear boundary without creating unnecessary conflict. It is calm, respectful, and practical.">C. “I’d rather keep that private.”</button>
+              </div>
+              <div class="quiz-feedback" aria-live="polite"></div>
+              <div class="quiz-explanation"></div>
+            </div>
+
+            <div class="quiz-card" data-quiz="q3">
+              <h3>Scenario 3 — Too much talking</h3>
+              <p class="quiz-context">A coworker has been talking to you for a long time, but you need to return to your work.</p>
+              <div class="answer-grid">
+                <button type="button" class="answer-option" data-correct="false" data-explanation="This is rude and likely to create tension. It does not solve the problem gently.">A. “You’re talking way too much.”</button>
+                <button type="button" class="answer-option" data-correct="true" data-explanation="This is polite, natural, and direct. It clearly says you need to go back to work.">B. “Sorry, I need to get back to work.”</button>
+                <button type="button" class="answer-option" data-correct="false" data-explanation="This is insulting and may lead to more conflict, not a better result.">C. “Can you ever stop talking?”</button>
+              </div>
+              <div class="quiz-feedback" aria-live="polite"></div>
+              <div class="quiz-explanation"></div>
+            </div>
+
+            <div class="quiz-card" data-quiz="q4">
+              <h3>Scenario 4 — Inappropriate comment</h3>
+              <p class="quiz-context">A coworker makes a comment that makes you uncomfortable.</p>
+              <div class="answer-grid">
+                <button type="button" class="answer-option" data-correct="false" data-explanation="Laughing may keep the situation going and does not protect your comfort. A direct boundary is better.">A. Laugh even though you are uncomfortable.</button>
+                <button type="button" class="answer-option" data-correct="true" data-explanation="This is calm and strong. It makes the boundary clear and moves you back to work.">B. “I’m not comfortable with that. I’m going to get back to work.”</button>
+                <button type="button" class="answer-option" data-correct="false" data-explanation="This will likely escalate the situation and create more conflict.">C. “You’re disgusting.”</button>
+              </div>
+              <div class="quiz-feedback" aria-live="polite"></div>
+              <div class="quiz-explanation"></div>
+            </div>
+
+            <div class="quiz-card" data-quiz="q5">
+              <h3>Scenario 5 — Won’t take a hint</h3>
+              <p class="quiz-context">You have already said you need to leave, but the person keeps talking.</p>
+              <div class="answer-grid">
+                <button type="button" class="answer-option" data-correct="false" data-explanation="This is aggressive and may make the situation worse. You do not need to argue.">A. “I already told you! Stop!”</button>
+                <button type="button" class="answer-option" data-correct="true" data-explanation="This is clear and polite, but it makes the exit final. It works when someone ignores earlier hints.">B. “Sorry, I really have to go now. Take care.”</button>
+                <button type="button" class="answer-option" data-correct="false" data-explanation="Continuing the conversation may keep the person talking and delay your exit.">C. Continue listening because you do not want to be rude.</button>
+              </div>
+              <div class="quiz-feedback" aria-live="polite"></div>
+              <div class="quiz-explanation"></div>
+            </div>
+
+            <div class="quiz-card" data-quiz="q6">
+              <h3>Scenario 6 — Pushy salesperson</h3>
+              <p class="quiz-context">A salesperson keeps trying to convince you to buy something.</p>
+              <div class="answer-grid">
+                <button type="button" class="answer-option" data-correct="false" data-explanation="This is rude and may make the person more pushy. A calm refusal works better.">A. “Leave me alone.”</button>
+                <button type="button" class="answer-option" data-correct="true" data-explanation="This is polite, simple, and clear. It tells the salesperson you are not interested without creating conflict.">B. “No, thank you. I’m just looking.”</button>
+                <button type="button" class="answer-option" data-correct="false" data-explanation="This is hostile and may escalate the interaction. It is not the most effective boundary phrase.">C. “You’re wasting my time.”</button>
+              </div>
+              <div class="quiz-feedback" aria-live="polite"></div>
+              <div class="quiz-explanation"></div>
+            </div>
+
+            <div class="quiz-card" data-quiz="q7">
+              <h3>Scenario 7 — Uncomfortable stranger</h3>
+              <p class="quiz-context">A stranger starts talking to you and you do not want to continue the conversation.</p>
+              <div class="answer-grid">
+                <button type="button" class="answer-option" data-correct="true" data-explanation="This is polite, brief, and clear. It sets a boundary without escalating. If you feel unsafe, leave and move toward other people.">A. “Sorry, I’m not interested. Have a good day.”</button>
+                <button type="button" class="answer-option" data-correct="false" data-explanation="This may sound aggressive and make the person push harder. A calmer boundary is better.">B. “Why are you talking to me?”</button>
+                <button type="button" class="answer-option" data-correct="false" data-explanation="This is blunt and could create a more threatening situation. You do not need to continue the conversation.">C. “Go away.”</button>
+              </div>
+              <div class="quiz-feedback" aria-live="polite"></div>
+              <div class="quiz-explanation"></div>
+            </div>
+
+            <div class="quiz-card" data-quiz="q8">
+              <h3>Scenario 8 — Intrusive marriage question</h3>
+              <p class="quiz-context">Someone you have just met asks a very personal question about your marriage.</p>
+              <div class="answer-grid">
+                <button type="button" class="answer-option" data-correct="false" data-explanation="This is blunt and may be insulting. A less confrontational boundary is more effective.">A. “That’s none of your business.”</button>
+                <button type="button" class="answer-option" data-correct="false" data-explanation="This is insulting and could make the interaction worse. You can keep the topic private without attacking the person.">B. “I don’t want to tell you because you’re annoying.”</button>
+                <button type="button" class="answer-option" data-correct="true" data-explanation="This is respectful, clear, and practical. It says no without explanation or confrontation.">C. “I’d prefer to keep that private.”</button>
+              </div>
+              <div class="quiz-feedback" aria-live="polite"></div>
+              <div class="quiz-explanation"></div>
+            </div>
+
+            <div class="quiz-card" data-quiz="q9">
+              <h3>Scenario 9 — Interrupted while working</h3>
+              <p class="quiz-context">You are busy and someone keeps interrupting you.</p>
+              <div class="answer-grid">
+                <button type="button" class="answer-option" data-correct="false" data-explanation="This is too harsh and may create a difficult atmosphere. A calm redirect is better.">A. “Go away.”</button>
+                <button type="button" class="answer-option" data-correct="true" data-explanation="This is polite but clear. It tells the person you are busy and suggest talking later.">B. “I’m a bit busy right now. Can we talk later?”</button>
+                <button type="button" class="answer-option" data-correct="false" data-explanation="This is not a good choice because it blames the person instead of setting a boundary politely.">C. “You’re bothering me.”</button>
+              </div>
+              <div class="quiz-feedback" aria-live="polite"></div>
+              <div class="quiz-explanation"></div>
+            </div>
+
+            <div class="quiz-card" data-quiz="q10">
+              <h3>Scenario 10 — Someone makes you uncomfortable</h3>
+              <p class="quiz-context">Someone is making you uncomfortable and you want to leave.</p>
+              <div class="answer-grid">
+                <button type="button" class="answer-option" data-correct="false" data-explanation="Staying because you do not want to be rude can keep you in a situation that feels uncomfortable or unsafe.">A. Stay because you do not want to be rude.</button>
+                <button type="button" class="answer-option" data-correct="true" data-explanation="This is a calm boundary. It gives space and tells the person you need distance. If you feel unsafe, leave without explaining.">B. “Excuse me, I need some space.”</button>
+                <button type="button" class="answer-option" data-correct="false" data-explanation="This is harsh and could escalate the situation. You do not have to use a personal attack to leave.">C. “You’re a horrible person.”</button>
+              </div>
+              <div class="quiz-feedback" aria-live="polite"></div>
+              <div class="quiz-explanation"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="quick-practice" class="section-block" aria-labelledby="quick-practice-title">
+          <div class="section-heading">
+            <p class="kicker">Quick phrase practice</p>
+            <h2 id="quick-practice-title">Match the phrase to the situation.</h2>
+          </div>
+          <div class="quick-practice">
+            <div class="mini-practice" data-quick-practice>
+              <h3>Situation: A coworker keeps talking while you are working.</h3>
+              <p>Choose the best phrase.</p>
+              <div class="mini-options">
+                <button type="button" class="mini-option" data-correct="true">“I need to get back to work.”</button>
+                <button type="button" class="mini-option" data-correct="false">“I’m so tired of this.”</button>
+                <button type="button" class="mini-option" data-correct="false">“Why are you always talking?”</button>
+              </div>
+              <div class="mini-feedback" aria-live="polite"></div>
+            </div>
+
+            <div class="mini-practice" data-quick-practice>
+              <h3>Situation: Someone asks how much money you make.</h3>
+              <p>Choose the best phrase.</p>
+              <div class="mini-options">
+                <button type="button" class="mini-option" data-correct="false">“That’s rude.”</button>
+                <button type="button" class="mini-option" data-correct="true">“I’d rather keep that private.”</button>
+                <button type="button" class="mini-option" data-correct="false">“Why should I tell you?”</button>
+              </div>
+              <div class="mini-feedback" aria-live="polite"></div>
+            </div>
+
+            <div class="mini-practice" data-quick-practice>
+              <h3>Situation: A salesperson won’t stop.</h3>
+              <p>Choose the best phrase.</p>
+              <div class="mini-options">
+                <button type="button" class="mini-option" data-correct="false">“You’re annoying.”</button>
+                <button type="button" class="mini-option" data-correct="true">“No, thank you. I’m just looking.”</button>
+                <button type="button" class="mini-option" data-correct="false">“Go away.”</button>
+              </div>
+              <div class="mini-feedback" aria-live="polite"></div>
+            </div>
+
+            <div class="mini-practice" data-quick-practice>
+              <h3>Situation: You want to leave a conversation.</h3>
+              <p>Choose the best phrase.</p>
+              <div class="mini-options">
+                <button type="button" class="mini-option" data-correct="true">“Sorry, I need to get going.”</button>
+                <button type="button" class="mini-option" data-correct="false">“You are not letting me leave.”</button>
+                <button type="button" class="mini-option" data-correct="false">“This conversation is over.”</button>
+              </div>
+              <div class="mini-feedback" aria-live="polite"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="speaking" class="section-block" aria-labelledby="speaking-title">
+          <div class="section-heading">
+            <p class="kicker">Speaking practice</p>
+            <h2 id="speaking-title">Say it out loud and make it sound natural.</h2>
+          </div>
+          <ul class="speak-list">
+            <li>1. “Your coworker keeps talking while you are working. What do you say?”</li>
+            <li>2. “Someone asks how much money you make. What do you say?”</li>
+            <li>3. “Someone makes an inappropriate comment. What do you say?”</li>
+            <li>4. “A salesperson keeps pressuring you. What do you say?”</li>
+            <li>5. “You want to leave a conversation. What do you say?”</li>
+          </ul>
+          <div class="intro-callout" style="margin-top: 20px;">
+            You do not need to memorize one exact sentence. Practice with your own words. Aim for calm, clear English that sounds natural to you.
+          </div>
+        </section>
+
+        <section id="challenge" class="section-block" aria-labelledby="challenge-title">
+          <div class="section-heading">
+            <p class="kicker">Real-life challenge</p>
+            <h2 id="challenge-title">What would you say?</h2>
+          </div>
+          <div class="model-answer-box">
+            <p>You are at work. A coworker keeps asking you personal questions and talking to you while you are trying to work. You want to set a boundary and return to your job.</p>
+            <div class="final-models">
+              <div class="model-card">
+                <strong>Model answer 1</strong>
+                <p>“I’d rather keep that private. I need to get back to work.”</p>
+              </div>
+              <div class="model-card">
+                <strong>Model answer 2</strong>
+                <p>“I’m not comfortable talking about that. I need to finish this first.”</p>
+              </div>
+              <div class="model-card">
+                <strong>Model answer 3</strong>
+                <p>“Sorry, I need to get back to my station.”</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="safety" class="section-block" aria-labelledby="safety-title">
+          <div class="section-heading">
+            <p class="kicker">Safety reminder</p>
+            <h2 id="safety-title">When safety comes first</h2>
+          </div>
+          <div class="safety-box">
+            <h3>Polite English is useful, but your safety is more important than being polite.</h3>
+            <p>If someone is threatening, aggressive, following you, or making you feel unsafe:</p>
+            <ul>
+              <li>Leave.</li>
+              <li>Move toward other people.</li>
+              <li>Go somewhere public or secure.</li>
+              <li>Ask someone you trust for help.</li>
+              <li>Contact emergency services when appropriate.</li>
+            </ul>
+            <p style="margin-top: 14px; font-weight: 700; color: var(--teal-dark);">You do not owe someone a conversation just because they started one.</p>
+          </div>
+        </section>
+
+        <section id="takeaway" class="section-block" aria-labelledby="takeaway-title">
+          <div class="section-heading">
+            <p class="kicker">Final takeaway</p>
+            <h2 id="takeaway-title">Polite → Firm → Leave</h2>
+          </div>
+          <div class="final-takeaway">
+            <h3>Remember:</h3>
+            <p>Start politely when the situation is safe. Set a clear boundary when necessary. Leave when you need to.</p>
+            <p style="margin-top: 16px; color: var(--yellow);">You can be kind without giving away your time, attention, or personal information.</p>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div><span class="brand-mark">T</span> TeeTalkEnglish</div>
+    <p>Practical English practice for real communication.</p>
+    <a href="#lesson-title">Back to top ↑</a>
+  </footer>
+</body>
+</html>

@@ -117,6 +117,23 @@
     .workplace-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .workplace-card ul { margin: 0; padding-left: 18px; color: var(--ink-soft); }
     .workplace-card li + li { margin-top: 7px; }
+    .situation-list { display: grid; gap: 9px; }
+    .scenario-card { background: var(--paper); border: 1px solid var(--line); }
+    .scenario-trigger {
+      display: block;
+      width: 100%;
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--ink);
+      padding: 14px 16px;
+      text-align: left;
+      cursor: pointer;
+      transition: border-color .2s ease, background .2s ease;
+    }
+    .scenario-trigger:hover, .scenario-trigger:focus-visible { border-color: var(--teal); background: #edf9f5; }
+    .scenario-trigger:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+    .scenario-trigger { font: 700 1.08rem/1.4 var(--serif); }
+    .scenario-answer { border-top: 1px solid var(--line); margin-top: 8px; padding: 11px 16px 13px; color: var(--ink); font: italic 400 .98rem/1.6 var(--serif); }
     .quiz-list { display: grid; gap: 18px; }
     .quiz-card {
       background: var(--white);
@@ -295,6 +312,14 @@
           });
         });
       });
+
+      document.querySelectorAll('.scenario-trigger').forEach((button) => {
+        button.addEventListener('click', () => {
+          const answer = button.nextElementSibling;
+          if (!answer) return;
+          answer.hidden = !answer.hidden;
+        });
+      });
     });
   </script>
 </head>
@@ -461,25 +486,25 @@
           <div class="workplace-grid">
             <div class="workplace-card">
               <h3>Common situations</h3>
-              <ul>
-                <li>A coworker talks too much while you are working.</li>
-                <li>A coworker interrupts you repeatedly.</li>
-                <li>A coworker asks how much money you make.</li>
-                <li>A coworker asks intrusive questions about your marriage.</li>
-                <li>A coworker makes an inappropriate joke or comment.</li>
-                <li>A coworker keeps talking when you need to return to your station.</li>
-              </ul>
+              <div class="situation-list">
+                <div class="scenario-card reveal-card"><button class="scenario-trigger" type="button">A coworker talks too much while you are working.</button><div class="scenario-answer" hidden>Sorry, I need to get back to my work. We can chat later.</div></div>
+                <div class="scenario-card reveal-card"><button class="scenario-trigger" type="button">A coworker interrupts you repeatedly.</button><div class="scenario-answer" hidden>Sorry, I need to finish this first. Can we talk later?</div></div>
+                <div class="scenario-card reveal-card"><button class="scenario-trigger" type="button">A coworker asks how much money you make.</button><div class="scenario-answer" hidden>I’d rather keep that private.</div></div>
+                <div class="scenario-card reveal-card"><button class="scenario-trigger" type="button">A coworker asks intrusive questions about your marriage.</button><div class="scenario-answer" hidden>I’d rather not talk about that at work. Anyway, I need to get back to work.</div></div>
+                <div class="scenario-card reveal-card"><button class="scenario-trigger" type="button">A coworker makes an inappropriate joke or comment.</button><div class="scenario-answer" hidden>I’d rather not talk about that. I’m going to get back to work.</div></div>
+                <div class="scenario-card reveal-card"><button class="scenario-trigger" type="button">A coworker keeps talking when you need to return to your station.</button><div class="scenario-answer" hidden>Sorry, I need to get back to my station. We can catch up later.</div></div>
+              </div>
             </div>
             <div class="workplace-card">
               <h3>More examples</h3>
-              <ul>
-                <li>Someone keeps teasing you.</li>
-                <li>Someone stands too close and makes you uncomfortable.</li>
-                <li>Someone wants to keep talking after work when you want to go home.</li>
-                <li>A salesperson keeps pressuring you.</li>
-                <li>A stranger does not take a hint.</li>
-                <li>Someone asks you to do something you do not want to do.</li>
-              </ul>
+              <div class="situation-list">
+                <div class="scenario-card reveal-card"><button class="scenario-trigger" type="button">Someone keeps teasing you.</button><div class="scenario-answer" hidden>I’d rather you didn’t joke about that. I’m going to head off now.</div></div>
+                <div class="scenario-card reveal-card"><button class="scenario-trigger" type="button">Someone stands too close and makes you uncomfortable.</button><div class="scenario-answer" hidden>Sorry, could you give me a little bit of space?</div></div>
+                <div class="scenario-card reveal-card"><button class="scenario-trigger" type="button">Someone wants to keep talking after work when you want to go home.</button><div class="scenario-answer" hidden>It was nice talking to you, but I need to get home now. Take care.</div></div>
+                <div class="scenario-card reveal-card"><button class="scenario-trigger" type="button">A salesperson keeps pressuring you.</button><div class="scenario-answer" hidden>No, thanks. I’m not interested. I’m going to have a look around.</div></div>
+                <div class="scenario-card reveal-card"><button class="scenario-trigger" type="button">A stranger does not take a hint.</button><div class="scenario-answer" hidden>Sorry, I’m not interested. I need to go now.</div></div>
+                <div class="scenario-card reveal-card"><button class="scenario-trigger" type="button">Someone asks you to do something you do not want to do.</button><div class="scenario-answer" hidden>Sorry, I won’t be able to do that.</div></div>
+              </div>
             </div>
           </div>
         </section>

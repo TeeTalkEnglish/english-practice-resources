@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn natural English phrases for expressing discomfort, dislike, annoyance, and setting personal boundaries clearly and politely.">
+  <title>You Don't Have to Be Nice: Expressing Discomfort & Setting Boundaries | TeeTalkEnglish</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script src="../assets/script.js" defer></script>
+  <style>
+    .lesson-layout { max-width: 1200px; margin: 0 auto; padding: 50px 24px 0; display: grid; grid-template-columns: minmax(180px, 220px) minmax(0, 1fr); gap: 40px; }
+    .lesson-nav { position: sticky; top: 20px; align-self: start; }
+    .lesson-content { min-width: 0; }
+    .progress-wrap { max-width: 500px; margin-top: 22px; position: relative; z-index: 1; }
+    .progress-label { display: flex; justify-content: space-between; color: #d6e5d9; font-size: 12px; margin-bottom: 6px; }
+    .progress-track { height: 7px; background: rgba(255,255,255,.2); }
+    .progress-fill { height: 100%; width: 0; background: var(--yellow); transition: width .25s ease; }
+    .hero-reminder { display: inline-flex; align-items: center; gap: 10px; margin-top: 18px; padding: 12px 18px; background: rgba(244, 204, 112, .18); border: 1px solid rgba(244, 204, 112, .45); color: var(--white); font-weight: 800; font-size: 13px; letter-spacing: .04em; position: relative; z-index: 1; }
+    .hero-reminder::before { content: "!"; display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: var(--yellow); color: var(--teal-dark); font-size: 13px; line-height: 1; }
+    .section-heading { margin-bottom: 26px; }
+    .section-heading p:not(.kicker) { color: var(--ink-soft); }
+    .intro-callout, .phrase-group, .practice-card, .scenario-card, .roleplay-card, .voice-card, .feedback-card { background: var(--white); border: 1px solid var(--line); padding: 20px; }
+    .intro-callout { border-left: 4px solid var(--yellow); }
+    .intro-callout strong { color: var(--teal-dark); }
+    .warmup-grid, .phrase-groups, .practice-stack, .scenario-grid, .roleplay-stack, .voice-grid, .feedback-grid { display: grid; gap: 14px; }
+    .warmup-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .warmup-card { background: var(--white); border: 1px solid var(--line); padding: 18px; }
+    .warmup-card h3, .phrase-group h3, .practice-card h3, .scenario-card h3, .roleplay-card h3, .voice-card h3, .feedback-card h3 { color: var(--teal-dark); margin: 0 0 10px; font-size: 17px; }
+    .warmup-card p, .practice-card p, .scenario-card p, .roleplay-card p, .voice-card p { color: var(--ink-soft); margin: 0; font-size: 14px; }
+    .emotion-bank { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+    .emotion-bank span { background: var(--paper-deep); border: 1px solid var(--line); color: var(--teal-dark); padding: 7px 10px; font-size: 12px; font-weight: 800; }
+    .ladder { display: grid; gap: 10px; }
+    .ladder-step { display: grid; grid-template-columns: 92px 1fr; gap: 14px; align-items: stretch; background: var(--white); border: 1px solid var(--line); }
+    .ladder-level { display: grid; place-items: center; background: var(--teal-dark); color: var(--white); font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; padding: 14px 8px; text-align: center; }
+    .ladder-step:nth-child(2) .ladder-level { background: var(--teal); }
+    .ladder-step:nth-child(3) .ladder-level { background: var(--coral); }
+    .ladder-step:nth-child(4) .ladder-level, .ladder-step:nth-child(5) .ladder-level { background: #9f3f37; }
+    .ladder-phrase { padding: 15px 18px; }
+    .ladder-phrase strong { display: block; font: 19px/1.45 var(--serif); font-weight: 400; color: var(--ink); }
+    .ladder-phrase span { display: block; margin-top: 6px; color: var(--ink-soft); font-size: 12px; }
+    .phrase-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+    .phrase-list li { display: flex; justify-content: space-between; gap: 18px; padding-bottom: 8px; border-bottom: 1px solid var(--line); align-items: baseline; }
+    .phrase-list li:last-child { border-bottom: 0; padding-bottom: 0; }
+    .phrase-list strong { font: 16px/1.5 var(--serif); font-weight: 400; }
+    .phrase-list span { color: var(--ink-soft); font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; white-space: nowrap; }
+    .comparison-card { background: var(--white); border: 1px solid var(--line); padding: 0; overflow: hidden; }
+    .comparison-situation { background: var(--paper-deep); border-bottom: 1px solid var(--line); padding: 14px 18px; color: var(--teal-dark); font-weight: 800; }
+    .response-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .response-box { padding: 16px; border-right: 1px solid var(--line); min-height: 128px; }
+    .response-box:last-child { border-right: 0; }
+    .response-label { display: block; color: var(--coral); font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 10px; }
+    .response-box p { margin: 0; font: 17px/1.45 var(--serif); color: var(--ink); }
+    .voice-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+    .voice-card { border-top: 4px solid var(--teal); }
+    .voice-card:nth-child(2) { border-top-color: var(--yellow); }
+    .voice-card:nth-child(n+3) { border-top-color: var(--coral); }
+    .voice-card blockquote { margin: 12px 0 0; font: 18px/1.45 var(--serif); color: var(--ink); }
+    .delivery-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 16px; }
+    .delivery-list span { background: var(--paper-deep); border: 1px solid var(--line); padding: 10px 12px; color: var(--teal-dark); font-size: 13px; font-weight: 800; }
+    .scenario-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .small-button { border: 0; background: var(--teal-dark); color: var(--white); padding: 9px 13px; font-size: 12px; font-weight: 800; cursor: pointer; }
+    .small-button.secondary { background: var(--paper-deep); color: var(--teal-dark); }
+    .small-button:hover, .small-button:focus-visible { background: var(--teal); }
+    .small-button:focus-visible, .answer-option:focus-visible, .challenge-input:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+    .sample-answer { border-left: 3px solid var(--teal); margin-top: 14px; padding: 10px 0 10px 14px; color: var(--ink); font: 16px/1.5 var(--serif); }
+    .roleplay-line { display: grid; grid-template-columns: 120px 1fr; gap: 14px; padding: 13px 0; border-top: 1px solid var(--line); }
+    .roleplay-line:first-of-type { border-top: 0; }
+    .speaker { color: var(--coral); font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .1em; }
+    .dialogue { font: 17px/1.45 var(--serif); color: var(--ink); margin: 0; }
+    .roleplay-card.active { border-color: var(--teal); box-shadow: inset 4px 0 0 var(--teal); }
+    .quiz-card { background: var(--white); border: 1px solid var(--line); padding: 22px; }
+    .quiz-card h3 { color: var(--teal-dark); margin: 0 0 10px; font-size: 17px; }
+    .quiz-context { color: var(--ink-soft); margin: 0 0 16px; font-size: 14px; }
+    .answer-grid { display: grid; gap: 10px; }
+    .answer-option { width: 100%; border: 1px solid var(--line); background: var(--paper); color: var(--ink); padding: 12px 14px; text-align: left; cursor: pointer; transition: border-color .2s ease, transform .2s ease, background .2s ease; }
+    .answer-option:hover:enabled { border-color: var(--teal); transform: translateY(-1px); }
+    .answer-option.correct { background: #dff5e7; border-color: var(--teal); }
+    .answer-option.incorrect { background: #fbe6df; border-color: var(--coral); }
+    .answer-option:disabled { cursor: default; }
+    .quiz-feedback { min-height: 24px; margin-top: 12px; font-size: 12px; font-weight: 800; }
+    .quiz-feedback.success { color: var(--teal-dark); }
+    .quiz-feedback.error { color: var(--coral); }
+    .challenge-input { width: 100%; min-height: 96px; border: 1px solid var(--line); background: var(--paper); color: var(--ink); padding: 13px; resize: vertical; font: 16px/1.5 var(--sans); }
+    .feedback-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 16px; }
+    .feedback-card { padding: 16px; }
+    .feedback-card p { color: var(--ink-soft); margin: 0; font-size: 13px; }
+    .final-takeaway { background: var(--teal-dark); color: var(--white); padding: 32px 26px; margin-top: 34px; }
+    .final-takeaway h3 { color: var(--yellow); margin: 0 0 14px; font-size: 18px; }
+    .final-takeaway p { margin: 0; font: 22px/1.5 var(--serif); }
+    @media (max-width: 950px) {
+      .response-grid, .voice-grid, .feedback-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .response-box:nth-child(2n), .response-box:last-child { border-right: 0; }
+      .response-box { border-bottom: 1px solid var(--line); }
+      .response-box:nth-last-child(-n+2) { border-bottom: 0; }
+    }
+    @media (max-width: 850px) {
+      .lesson-layout { grid-template-columns: 1fr; gap: 24px; padding-top: 40px; }
+      .lesson-nav { position: static; }
+      .warmup-grid, .delivery-list { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .lesson-layout { padding-left: 20px; padding-right: 20px; }
+      .ladder-step, .roleplay-line { grid-template-columns: 1fr; gap: 0; }
+      .ladder-level { justify-content: start; place-items: center start; padding: 10px 14px; }
+      .phrase-list li { display: block; }
+      .phrase-list span { display: block; margin-top: 5px; }
+      .response-grid, .voice-grid, .feedback-grid { grid-template-columns: 1fr; }
+      .response-box { border-right: 0; border-bottom: 1px solid var(--line); min-height: auto; }
+      .response-box:last-child { border-bottom: 0; }
+    }
+  </style>
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      const completed = new Set();
+      const totalActivities = 8;
+      const progressFill = document.querySelector('[data-progress-fill]');
+      const progressText = document.querySelector('[data-progress-text]');
+
+      const updateProgress = (id) => {
+        if (!id || completed.has(id)) return;
+        completed.add(id);
+        progressFill.style.width = `${completed.size / totalActivities * 100}%`;
+        progressText.textContent = `${completed.size} / ${totalActivities} activities complete`;
+      };
+
+      document.querySelectorAll('[data-reveal-sample]').forEach((button) => {
+        button.addEventListener('click', () => {
+          const answer = document.getElementById(button.dataset.revealSample);
+          if (!answer) return;
+          answer.hidden = !answer.hidden;
+          button.textContent = answer.hidden ? 'Show possible responses' : 'Hide responses';
+          updateProgress(button.dataset.progress);
+        });
+      });
+
+      document.querySelectorAll('[data-quiz]').forEach((card) => {
+        const options = card.querySelectorAll('.answer-option');
+        options.forEach((option) => {
+          option.addEventListener('click', () => {
+            if (option.disabled) return;
+            const isCorrect = option.dataset.correct === 'true';
+            options.forEach((btn) => {
+              btn.disabled = true;
+              if (btn.dataset.correct === 'true') btn.classList.add('correct');
+            });
+            if (!isCorrect) option.classList.add('incorrect');
+            const feedback = card.querySelector('.quiz-feedback');
+            feedback.textContent = isCorrect ? option.dataset.success : option.dataset.explanation;
+            feedback.classList.toggle('success', isCorrect);
+            feedback.classList.toggle('error', !isCorrect);
+            if (isCorrect) updateProgress(card.dataset.quiz);
+          });
+        });
+      });
+
+      const roleplayCards = [...document.querySelectorAll('[data-roleplay-round]')];
+      const roleplayButton = document.querySelector('[data-roleplay-next]');
+      let roundIndex = 0;
+      const renderRound = () => {
+        roleplayCards.forEach((card, index) => card.classList.toggle('active', index === roundIndex));
+        if (roleplayButton) roleplayButton.textContent = roundIndex === roleplayCards.length - 1 ? 'Try again from round 1' : 'Next round';
+      };
+      if (roleplayButton) {
+        roleplayButton.addEventListener('click', () => {
+          roundIndex = (roundIndex + 1) % roleplayCards.length;
+          renderRound();
+          updateProgress('roleplay');
+        });
+        renderRound();
+      }
+
+      const challengeInput = document.querySelector('[data-challenge-input]');
+      const challengeFeedback = document.querySelector('[data-challenge-feedback]');
+      const challengeButton = document.querySelector('[data-challenge-check]');
+      if (challengeButton && challengeInput && challengeFeedback) {
+        challengeButton.addEventListener('click', () => {
+          const response = challengeInput.value.trim().toLowerCase();
+          const hasBoundary = /stop|no|not comfortable|don't like|do not like|respect|personal|rather not|done|not doing/.test(response);
+          const overApologizes = (response.match(/sorry/g) || []).length > 1 || /it's okay|it is okay|maybe/.test(response);
+          if (!response) {
+            challengeFeedback.textContent = 'Write one clear sentence first.';
+            challengeFeedback.className = 'quiz-feedback error';
+            return;
+          }
+          if (hasBoundary && !overApologizes) {
+            challengeFeedback.textContent = 'Good. Your response sets a boundary without sounding rude.';
+            challengeFeedback.className = 'quiz-feedback success';
+            updateProgress('challenge');
+          } else if (overApologizes) {
+            challengeFeedback.textContent = 'Try again with less apologizing. You can be polite and still be clear.';
+            challengeFeedback.className = 'quiz-feedback error';
+          } else {
+            challengeFeedback.textContent = 'Make the boundary clearer. Try phrases like "I already said no" or "Please stop."';
+            challengeFeedback.className = 'quiz-feedback error';
+          }
+        });
+      }
+    });
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../index.html" aria-label="TeeTalkEnglish home"><span class="brand-mark">T</span><span>TeeTalk<span>English</span></span></a>
+      <a class="back-link" href="index.html">Back to Common Conversations <span aria-hidden="true">-&gt;</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="lesson-title">
+      <div class="hero-inner">
+        <div class="eyebrow">Everyday English <span></span> 15-20 minutes</div>
+        <h1 id="lesson-title">You Don't Have to Be Nice: <em>Expressing Discomfort & Setting Boundaries</em></h1>
+        <p class="hero-lede">Practise clear, natural English for saying no, asking someone to stop, and ending conversations that feel uncomfortable.</p>
+        <div class="hero-reminder">Polite does not mean passive.</div>
+        <div class="progress-wrap" aria-live="polite">
+          <div class="progress-label"><span>Lesson progress</span><span data-progress-text>0 / 8 activities complete</span></div>
+          <div class="progress-track"><div class="progress-fill" data-progress-fill></div></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="lesson-layout">
+      <aside class="lesson-nav" aria-label="Lesson sections">
+        <p class="nav-label">In this lesson</p>
+        <a href="#goal">01 <span>Learning goal</span></a>
+        <a href="#warmup">02 <span>How would you feel?</span></a>
+        <a href="#ladder">03 <span>Intensity ladder</span></a>
+        <a href="#phrases">04 <span>Useful expressions</span></a>
+        <a href="#clear">05 <span>Too nice vs clear</span></a>
+        <a href="#voice">06 <span>Same words, emotion</span></a>
+        <a href="#scenarios">07 <span>Boundary scenarios</span></a>
+        <a href="#roleplay">08 <span>Movie scene roleplay</span></a>
+        <a href="#challenge">09 <span>Final challenge</span></a>
+      </aside>
+
+      <article class="lesson-content">
+        <section id="goal" class="intro-section" aria-labelledby="goal-title">
+          <div class="section-number">01</div>
+          <div>
+            <p class="kicker">Learning goal</p>
+            <h2 id="goal-title">Be kind, but do not disappear.</h2>
+            <p>This lesson is not about being rude. It is about learning how English speakers can be polite, clear, and firm when something feels uncomfortable.</p>
+            <p>By the end, you should be able to say no, name discomfort, ask someone to stop, repeat your boundary, and end the conversation when necessary.</p>
+          </div>
+        </section>
+
+        <section id="warmup" class="section-block" aria-labelledby="warmup-title">
+          <div class="section-heading">
+            <p class="kicker">Warm-up</p>
+            <h2 id="warmup-title">How would you feel?</h2>
+            <p>Read each situation and say one emotion aloud. Keep it quick and honest.</p>
+          </div>
+          <div class="warmup-grid">
+            <div class="warmup-card"><h3>Someone keeps interrupting you.</h3><p>How would you feel?</p></div>
+            <div class="warmup-card"><h3>Someone asks how much money you make.</h3><p>How would you feel?</p></div>
+            <div class="warmup-card"><h3>Someone borrows your things without asking.</h3><p>How would you feel?</p></div>
+            <div class="warmup-card"><h3>Someone keeps pressuring you after you said no.</h3><p>How would you feel?</p></div>
+            <div class="warmup-card"><h3>Someone makes a rude comment about your appearance.</h3><p>How would you feel?</p></div>
+            <div class="warmup-card"><h3>Someone touches your belongings without permission.</h3><p>How would you feel?</p></div>
+          </div>
+          <div class="emotion-bank" aria-label="Possible emotions">
+            <span>uncomfortable</span><span>annoyed</span><span>irritated</span><span>frustrated</span><span>disappointed</span><span>angry</span><span>embarrassed</span><span>offended</span><span>disgusted</span>
+          </div>
+        </section>
+
+        <section id="ladder" class="section-block" aria-labelledby="ladder-title">
+          <div class="section-heading">
+            <p class="kicker">Emotion intensity ladder</p>
+            <h2 id="ladder-title">Start calm. Become clearer if the person continues.</h2>
+            <p>Choose the level that fits the situation. You do not need to jump straight to strong language.</p>
+          </div>
+          <div class="ladder">
+            <div class="ladder-step"><div class="ladder-level">Level 1<br>Polite</div><div class="ladder-phrase"><strong>"I'm not really comfortable with that."</strong><span>Use this when the situation is uncomfortable but still calm.</span></div></div>
+            <div class="ladder-step"><div class="ladder-level">Level 2<br>Clear</div><div class="ladder-phrase"><strong>"I don't like that."</strong><span>Use this when the person needs a direct message.</span></div></div>
+            <div class="ladder-step"><div class="ladder-level">Level 3<br>Firm</div><div class="ladder-phrase"><strong>"Please stop."</strong><span>Use this when the behavior should end now.</span></div></div>
+            <div class="ladder-step"><div class="ladder-level">Level 4<br>Strong</div><div class="ladder-phrase"><strong>"I said stop. I don't appreciate that."</strong><span>Use this when your first boundary was ignored.</span></div></div>
+            <div class="ladder-step"><div class="ladder-level">Level 5<br>End</div><div class="ladder-phrase"><strong>"I'm done with this conversation."</strong><span>Use this when continuing will not help.</span></div></div>
+          </div>
+        </section>
+
+        <section id="phrases" class="section-block" aria-labelledby="phrases-title">
+          <div class="section-heading">
+            <p class="kicker">Useful expressions</p>
+            <h2 id="phrases-title">Short phrases are often stronger than long explanations.</h2>
+          </div>
+          <div class="phrase-groups">
+            <div class="phrase-group"><h3>Expressing discomfort</h3><ul class="phrase-list"><li><strong>"I'm not comfortable with that."</strong><span>clear</span></li><li><strong>"That makes me uncomfortable."</strong><span>direct</span></li><li><strong>"I'd rather not."</strong><span>soft</span></li><li><strong>"I don't feel comfortable talking about that."</strong><span>private</span></li></ul></div>
+            <div class="phrase-group"><h3>Expressing dislike</h3><ul class="phrase-list"><li><strong>"I don't like that."</strong><span>clear</span></li><li><strong>"I don't appreciate that."</strong><span>firm</span></li><li><strong>"That's not okay with me."</strong><span>boundary</span></li><li><strong>"I really don't like being treated that way."</strong><span>strong</span></li></ul></div>
+            <div class="phrase-group"><h3>Saying no</h3><ul class="phrase-list"><li><strong>"No, thank you."</strong><span>polite</span></li><li><strong>"I'd rather not."</strong><span>soft</span></li><li><strong>"I don't want to."</strong><span>honest</span></li><li><strong>"No. I'm not doing that."</strong><span>firm</span></li></ul></div>
+            <div class="phrase-group"><h3>Asking someone to stop</h3><ul class="phrase-list"><li><strong>"Please stop."</strong><span>firm</span></li><li><strong>"Can you stop?"</strong><span>direct</span></li><li><strong>"Don't do that."</strong><span>strong</span></li><li><strong>"Please don't touch my things."</strong><span>specific</span></li><li><strong>"Please don't interrupt me."</strong><span>specific</span></li></ul></div>
+            <div class="phrase-group"><h3>Standing your ground</h3><ul class="phrase-list"><li><strong>"I already told you no."</strong><span>repeat</span></li><li><strong>"I said I'm not comfortable with that."</strong><span>repeat</span></li><li><strong>"That's personal."</strong><span>private</span></li><li><strong>"I'm not going to discuss that."</strong><span>closed</span></li><li><strong>"You need to respect my answer."</strong><span>firm</span></li></ul></div>
+            <div class="phrase-group"><h3>Ending the conversation</h3><ul class="phrase-list"><li><strong>"I'm done with this conversation."</strong><span>final</span></li><li><strong>"I'm not going to argue about this."</strong><span>closed</span></li><li><strong>"We're done here."</strong><span>strong</span></li><li><strong>"I'm leaving."</strong><span>action</span></li></ul></div>
+          </div>
+        </section>
+
+        <section id="clear" class="section-block" aria-labelledby="clear-title">
+          <div class="section-heading">
+            <p class="kicker">Too nice vs clear</p>
+            <h2 id="clear-title">Replace nervous agreement with a real boundary.</h2>
+          </div>
+          <div class="practice-stack">
+            <div class="comparison-card"><div class="comparison-situation">Situation: Someone keeps interrupting you.</div><div class="response-grid"><div class="response-box"><span class="response-label">Too nice</span><p>"Sorry... it's okay."</p></div><div class="response-box"><span class="response-label">Better</span><p>"I wasn't finished."</p></div><div class="response-box"><span class="response-label">Firm</span><p>"Please let me finish."</p></div><div class="response-box"><span class="response-label">Strong</span><p>"Stop interrupting me."</p></div></div></div>
+            <div class="comparison-card"><div class="comparison-situation">Situation: Someone asks how much money you make.</div><div class="response-grid"><div class="response-box"><span class="response-label">Too nice</span><p>"Oh... I don't know."</p></div><div class="response-box"><span class="response-label">Better</span><p>"I'd rather not say."</p></div><div class="response-box"><span class="response-label">Firm</span><p>"That's personal."</p></div><div class="response-box"><span class="response-label">Strong</span><p>"I'm not going to discuss that."</p></div></div></div>
+            <div class="comparison-card"><div class="comparison-situation">Situation: Someone keeps pressuring you to go somewhere.</div><div class="response-grid"><div class="response-box"><span class="response-label">Too nice</span><p>"Maybe..."</p></div><div class="response-box"><span class="response-label">Better</span><p>"No, I can't."</p></div><div class="response-box"><span class="response-label">Firm</span><p>"I already said no."</p></div><div class="response-box"><span class="response-label">Strong</span><p>"Stop pressuring me."</p></div></div></div>
+          </div>
+        </section>
+
+        <section id="voice" class="section-block" aria-labelledby="voice-title">
+          <div class="section-heading">
+            <p class="kicker">Same words, different emotion</p>
+            <h2 id="voice-title">Say "I don't want to" five different ways.</h2>
+            <p>The words matter, but your voice, face, posture, and eye contact help the other person understand the boundary.</p>
+          </div>
+          <div class="voice-grid">
+            <div class="voice-card"><h3>Uncomfortable</h3><p>Small voice, softer eye contact.</p><blockquote>"I... don't really want to."</blockquote></div>
+            <div class="voice-card"><h3>Annoyed</h3><p>Steady voice, clear face.</p><blockquote>"I don't want to."</blockquote></div>
+            <div class="voice-card"><h3>Frustrated</h3><p>Slower and firmer.</p><blockquote>"I already told you. I don't want to."</blockquote></div>
+            <div class="voice-card"><h3>Angry</h3><p>Lower voice, stronger eye contact.</p><blockquote>"I said I don't want to."</blockquote></div>
+            <div class="voice-card"><h3>Done</h3><p>Final voice, move away.</p><blockquote>"No. I'm not doing this."</blockquote></div>
+          </div>
+          <div class="delivery-list" aria-label="Delivery points">
+            <span>Change your voice</span><span>Change your facial expression</span><span>Use eye contact</span><span>Stand or sit taller</span><span>Control your volume</span><span>Slow down when firm</span>
+          </div>
+        </section>
+
+        <section id="scenarios" class="section-block" aria-labelledby="scenarios-title">
+          <div class="section-heading">
+            <p class="kicker">Boundary scenarios</p>
+            <h2 id="scenarios-title">Choose a response, then say your own version aloud.</h2>
+          </div>
+          <div class="scenario-grid">
+            <div class="scenario-card"><h3>Scenario A - Personal questions</h3><p>"How much money do you make?"</p><div class="scenario-actions"><button type="button" class="small-button" data-reveal-sample="scenario-a" data-progress="scenario-a">Show possible responses</button></div><div id="scenario-a" class="sample-answer" hidden>"I'd rather not say."<br>"That's personal."<br>"I'm not comfortable discussing that."</div></div>
+            <div class="scenario-card"><h3>Scenario B - Interrupting</h3><p>The other person keeps interrupting.</p><div class="scenario-actions"><button type="button" class="small-button" data-reveal-sample="scenario-b" data-progress="scenario-b">Show possible responses</button></div><div id="scenario-b" class="sample-answer" hidden>"I wasn't finished."<br>"Please let me finish."<br>"Stop interrupting me."</div></div>
+            <div class="scenario-card"><h3>Scenario C - Borrowing things</h3><p>Someone repeatedly takes your things without asking.</p><div class="scenario-actions"><button type="button" class="small-button" data-reveal-sample="scenario-c" data-progress="scenario-c">Show possible responses</button></div><div id="scenario-c" class="sample-answer" hidden>"Please ask before taking my things."<br>"Don't take my things without asking."</div></div>
+            <div class="scenario-card"><h3>Scenario D - Pressure</h3><p>Someone keeps asking after you said no.</p><div class="scenario-actions"><button type="button" class="small-button" data-reveal-sample="scenario-d" data-progress="scenario-d">Show possible responses</button></div><div id="scenario-d" class="sample-answer" hidden>"I already said no."<br>"I don't want to."<br>"Please respect my answer."</div></div>
+            <div class="scenario-card"><h3>Scenario E - Rude comment</h3><p>"Your English isn't very good."</p><div class="scenario-actions"><button type="button" class="small-button" data-reveal-sample="scenario-e" data-progress="scenario-e">Show possible responses</button></div><div id="scenario-e" class="sample-answer" hidden>"That's rude."<br>"That's unnecessary."<br>"Don't speak to me like that."</div></div>
+          </div>
+        </section>
+
+        <section id="roleplay" class="section-block" aria-labelledby="roleplay-title">
+          <div class="section-heading">
+            <p class="kicker">Main activity</p>
+            <h2 id="roleplay-title">Movie Scene Roleplay: Stand Up for Yourself</h2>
+            <p>You are in a movie scene. The other person keeps crossing your boundaries. Your job is to respond naturally and show how you feel. The teacher or partner plays the difficult character.</p>
+          </div>
+          <div class="roleplay-stack">
+            <div class="roleplay-card" data-roleplay-round><h3>Round 1 - Annoying</h3><div class="roleplay-line"><span class="speaker">Other person</span><p class="dialogue">"Come on. You're coming with us tonight."</p></div><div class="roleplay-line"><span class="speaker">Student</span><p class="dialogue">"No, I don't want to."</p></div></div>
+            <div class="roleplay-card" data-roleplay-round><h3>Round 2 - Pushy</h3><div class="roleplay-line"><span class="speaker">Other person</span><p class="dialogue">"Why not? Stop being difficult."</p></div><div class="roleplay-line"><span class="speaker">Student</span><p class="dialogue">"I said no."</p></div></div>
+            <div class="roleplay-card" data-roleplay-round><h3>Round 3 - Rude</h3><div class="roleplay-line"><span class="speaker">Other person</span><p class="dialogue">"You're always so sensitive."</p></div><div class="roleplay-line"><span class="speaker">Student</span><p class="dialogue">"That's rude."</p></div></div>
+            <div class="roleplay-card" data-roleplay-round><h3>Round 4 - Ignoring the boundary</h3><div class="roleplay-line"><span class="speaker">Other person</span><p class="dialogue">"Whatever. You're coming anyway."</p></div><div class="roleplay-line"><span class="speaker">Student</span><p class="dialogue">"I already told you no. You need to respect my answer."</p></div></div>
+            <div class="roleplay-card" data-roleplay-round><h3>Round 5 - End the conversation</h3><div class="roleplay-line"><span class="speaker">Other person</span><p class="dialogue">"Fine. You're impossible."</p></div><div class="roleplay-line"><span class="speaker">Student</span><p class="dialogue">"I'm done with this conversation."</p></div></div>
+          </div>
+          <div class="scenario-actions"><button type="button" class="small-button" data-roleplay-next>Next round</button><button type="button" class="small-button secondary" data-copy="No, I don't want to. I already said no. You need to respect my answer.">Copy model response</button></div>
+          <div class="intro-callout" style="margin-top: 18px;">Try the scene again with your own words. You do not need to memorize the exact answer; you need to communicate the boundary clearly.</div>
+        </section>
+
+        <section id="challenge" class="section-block" aria-labelledby="challenge-title">
+          <div class="section-heading">
+            <p class="kicker">Final challenge</p>
+            <h2 id="challenge-title">Don't be too nice.</h2>
+            <p>Respond without unnecessary apologizing, nervous laughing, saying "it's okay" when it is not okay, or agreeing just to avoid conflict.</p>
+          </div>
+          <div class="quiz-card">
+            <h3>Situation</h3>
+            <p class="quiz-context">Someone keeps touching your belongings after you asked them not to. Write one natural response.</p>
+            <textarea class="challenge-input" data-challenge-input aria-label="Write your boundary response" placeholder="Example: Please stop touching my things. I already asked you not to."></textarea>
+            <div class="scenario-actions"><button type="button" class="small-button" data-challenge-check>Check my response</button></div>
+            <div class="quiz-feedback" data-challenge-feedback aria-live="polite"></div>
+          </div>
+          <div class="feedback-grid">
+            <div class="feedback-card"><h3>Feeling</h3><p>Does the response show discomfort or dislike?</p></div>
+            <div class="feedback-card"><h3>Boundary</h3><p>Does it clearly say what should stop?</p></div>
+            <div class="feedback-card"><h3>Natural English</h3><p>Is it short enough to say in real life?</p></div>
+            <div class="feedback-card"><h3>Firmness</h3><p>Is it polite, clear, or firm enough for the situation?</p></div>
+          </div>
+          <div class="final-takeaway">
+            <h3>Remember:</h3>
+            <p>The goal is Polite -&gt; Clear -&gt; Firm, not Polite -&gt; Rude.</p>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div><span class="brand-mark">T</span> TeeTalkEnglish</div>
+    <p>Practical English practice for real communication.</p>
+    <a href="#lesson-title">Back to top ^</a>
+  </footer>
+</body>
+</html>

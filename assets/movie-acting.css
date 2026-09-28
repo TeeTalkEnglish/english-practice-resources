@@ -1,0 +1,192 @@
+/* =========================================
+   SCREENPLAY / MOVIE SCRIPT
+========================================= */
+
+.script-section {
+    margin-top: 70px;
+}
+
+.script-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.script-label {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #24B7BD;
+    margin-bottom: 10px;
+}
+
+.script-header h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #1f2937;
+}
+
+.script-header p {
+    margin-top: 8px;
+    color: #6b7280;
+    font-size: 1rem;
+}
+
+/* =========================================
+   SCREENPLAY PAPER
+========================================= */
+
+.screenplay {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 65px 80px;
+    background: #fff;
+
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.08);
+
+    font-family: "Courier New", Courier, monospace;
+    font-size: 15px;
+    line-height: 1.65;
+
+    color: #111;
+}
+
+/* =========================================
+   SCENE HEADING
+========================================= */
+
+.scene-heading {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    letter-spacing: 0.3px;
+}
+
+/* =========================================
+   ACTION / DESCRIPTION
+========================================= */
+
+.action {
+    max-width: 680px;
+    margin: 0 0 26px 0;
+    text-transform: none;
+}
+
+/* =========================================
+   DIALOGUE BLOCK
+========================================= */
+
+.dialogue-block {
+    margin: 28px 0;
+}
+
+/* CHARACTER NAME */
+
+.character {
+    width: 260px;
+    margin-left: 250px;
+
+    text-align: center;
+
+    font-weight: 700;
+    text-transform: uppercase;
+
+    margin-bottom: 2px;
+}
+
+/* DIALOGUE */
+
+.dialogue {
+    width: 390px;
+    margin-left: 185px;
+
+    text-align: left;
+}
+
+/* =========================================
+   IMPORTANT / STRONG LINE
+========================================= */
+
+.dialogue.emphasis {
+    font-weight: 700;
+}
+
+/* =========================================
+   SCRIPT ENDING
+========================================= */
+
+.script-ending {
+    margin-top: 45px;
+
+    text-align: center;
+
+    font-weight: 700;
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .screenplay {
+        padding: 40px 25px;
+        font-size: 14px;
+    }
+
+    .character {
+        width: 200px;
+        margin-left: 50px;
+    }
+
+    .dialogue {
+        width: auto;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .action {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .script-section {
+        margin-top: 45px;
+    }
+
+    .script-header h2 {
+        font-size: 1.6rem;
+    }
+
+    .screenplay {
+        padding: 30px 18px;
+        font-size: 13px;
+    }
+
+    .character {
+        width: 160px;
+        margin-left: 20px;
+    }
+
+    .dialogue {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .action {
+        margin-bottom: 20px;
+    }
+
+    .dialogue-block {
+        margin: 22px 0;
+    }
+}

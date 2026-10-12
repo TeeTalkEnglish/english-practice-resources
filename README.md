@@ -1,2 +1,8 @@
 # english-practice-resources
 Practical English practice resources, tools, and activities to help learners improve speaking, conversation, listening, and communication skills anytime.
+
+## Data-driven conversation lessons
+
+The shared lesson page is `real-life-situations/lesson.html`. Open a lesson with the query parameter `?topic=<slug>`; its JSON is loaded from `real-life-situations/data/<slug>.json`. Add a link to `real-life-situations/index.html` to register a lesson in the catalog.
+
+Each lesson JSON contains `title`, `category`, `duration`, `summary`, an `introduction` with `heading` and `paragraphs`, and an ordered `sections` array. Every section has an `id`, `label`, `title`, `type`, and optional `description`. The renderer supports these section types: `vocabulary` (`items` with `term`, `intensity`, `definition`, `example`, optional `note`); `expressions` (`items` with `expression`, `meaning`, `context`, `tone`, optional `caution`); `tone` (`phrase`, `versions` with `delivery` and `explanation`, `deliveryNotes`, `practice`); `dialogue` (`turns` with `speaker` and `line`, optional `questions` with `question` and `answer`); `multipleChoice` (`items` with `question`, optional `context`, three or more `options` with `text` and `feedback`, and `correctIndex`); `fillBlank` (`items` with a `sentence` containing one `___`, accepted `answers`, and `explanation`); `speaking` (`items` with `question`, `sampleAnswer`, optional `followUp`); and `review` (`items` with `question` and `answer`). Sample answers are hidden until their own button is selected, and each can be hidden again independently.

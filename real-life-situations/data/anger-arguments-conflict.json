@@ -1,0 +1,384 @@
+{
+  "title": "How to Argue in English: Anger, Emotions & Conflict",
+  "category": "Everyday English & IELTS Speaking",
+  "duration": "20-25 minutes",
+  "summary": "Learn natural English for describing anger, handling disagreements, setting boundaries, and discussing conflict.",
+  "introduction": {
+    "heading": "Speak clearly when emotions run high.",
+    "paragraphs": [
+      "This lesson combines practical phrases for everyday disagreements with speaking practice that can help you discuss emotions and conflict in an IELTS-style conversation.",
+      "You will learn to describe different levels of anger, understand how tone changes meaning, and state a boundary firmly without attacking the other person."
+    ]
+  },
+  "sections": [
+    {
+      "id": "anger-vocabulary",
+      "label": "Vocabulary for anger",
+      "title": "Choose the word that matches the intensity.",
+      "description": "These words are not exact synonyms. The best choice depends on how strong and long-lasting the feeling is.",
+      "type": "vocabulary",
+      "items": [
+        {
+          "term": "Annoyed",
+          "intensity": "mild",
+          "definition": "Slightly angry or bothered by something inconvenient or unpleasant.",
+          "example": "I was annoyed when the train was delayed again.",
+          "note": "Usually less intense than angry; often used for a specific irritation."
+        },
+        {
+          "term": "Irritated",
+          "intensity": "mild to moderate",
+          "definition": "A little angry or impatient, often because something keeps happening.",
+          "example": "She sounded irritated when I asked the same question for the third time.",
+          "note": "Often describes a visible reaction or a short temper in the moment."
+        },
+        {
+          "term": "Frustrated",
+          "intensity": "moderate",
+          "definition": "Upset or impatient because you cannot do something, solve a problem, or make progress.",
+          "example": "I felt frustrated because he kept interrupting before I could explain.",
+          "note": "Focuses on an obstacle or an unmet goal, rather than only anger."
+        },
+        {
+          "term": "Angry",
+          "intensity": "strong",
+          "definition": "Feeling strong displeasure because you believe something is wrong, unfair, or hurtful.",
+          "example": "He was angry that his colleague blamed him for the mistake.",
+          "note": "A common, direct word that ranges from moderate to strong."
+        },
+        {
+          "term": "Furious",
+          "intensity": "very strong",
+          "definition": "Extremely angry.",
+          "example": "They were furious when they discovered that someone had damaged their car.",
+          "note": "Much stronger than angry; avoid it for a small inconvenience."
+        },
+        {
+          "term": "Fed up",
+          "intensity": "strong, often after repeated problems",
+          "definition": "Annoyed or frustrated because you have tolerated the same problem for too long.",
+          "example": "I'm fed up with being interrupted every time I try to speak.",
+          "note": "Usually followed by with and a noun or -ing form: fed up with the noise / fed up with waiting."
+        }
+      ]
+    },
+    {
+      "id": "argument-expressions",
+      "label": "Expressions in arguments",
+      "title": "Understand the meaning and the force of each phrase.",
+      "description": "Some of these expressions are confrontational. Use them with care, and choose a calmer option when you want to keep the conversation constructive.",
+      "type": "expressions",
+      "items": [
+        {
+          "expression": "“Are you kidding me?”",
+          "meaning": "Shows disbelief or strong annoyance about what someone has just said or done.",
+          "context": "A surprising or seemingly unreasonable situation, usually when you already know the other person.",
+          "tone": "Often sarcastic or confrontational; it can sound rude.",
+          "caution": "Calmer alternative: “I can't believe that happened. Can you explain?”"
+        },
+        {
+          "expression": "“I've had enough!”",
+          "meaning": "Says that you will not tolerate any more of a behavior or situation.",
+          "context": "After a problem has continued or a boundary has been ignored.",
+          "tone": "Firm to angry, depending on stress and volume."
+        },
+        {
+          "expression": "“That's not what I said.”",
+          "meaning": "Corrects someone's inaccurate account of your words.",
+          "context": "When someone misunderstands or misrepresents what you said.",
+          "tone": "Direct; it may sound defensive if delivered sharply."
+        },
+        {
+          "expression": "“Don't put words in my mouth.”",
+          "meaning": "Tells someone not to claim that you said something you did not say.",
+          "context": "When you feel someone is misrepresenting your position.",
+          "tone": "Accusatory and confrontational.",
+          "caution": "Calmer alternative: “That's not quite what I meant. Let me clarify.”"
+        },
+        {
+          "expression": "“What's your problem?”",
+          "meaning": "Challenges someone's behavior and asks why they are acting that way.",
+          "context": "Informal arguments between people who know each other.",
+          "tone": "Rude, aggressive, and likely to escalate conflict.",
+          "caution": "Calmer alternative: “Is something bothering you?”"
+        },
+        {
+          "expression": "“I'm not putting up with this anymore.”",
+          "meaning": "Says you will no longer accept a repeated or unacceptable behavior.",
+          "context": "When you are setting a firm limit or preparing to leave a situation.",
+          "tone": "Strong and confrontational, but clearly communicates a limit."
+        },
+        {
+          "expression": "“Watch your tone.”",
+          "meaning": "Tells someone that the way they are speaking sounds disrespectful.",
+          "context": "When a person is speaking sharply or contemptuously.",
+          "tone": "A warning; may sound controlling or confrontational.",
+          "caution": "Alternative: “Please speak to me respectfully.”"
+        },
+        {
+          "expression": "“You need to back off.”",
+          "meaning": "Tells someone to stop pressuring you or give you space.",
+          "context": "When someone will not respect your physical or conversational space.",
+          "tone": "Very firm and potentially aggressive; useful when a direct boundary is needed."
+        },
+        {
+          "expression": "“Don't talk to me like that.”",
+          "meaning": "Sets a boundary about disrespectful speech.",
+          "context": "When someone insults you, shouts at you, or speaks disrespectfully.",
+          "tone": "Direct and firm; the delivery determines whether it sounds controlled or angry."
+        },
+        {
+          "expression": "“Let me finish.”",
+          "meaning": "Asks someone to stop interrupting until you complete your point.",
+          "context": "During a discussion when another person talks over you.",
+          "tone": "Clear and reasonably neutral; stronger stress can make it sound impatient."
+        },
+        {
+          "expression": "“Don't tell me how I should feel.”",
+          "meaning": "Rejects someone else's attempt to judge or dictate your emotions.",
+          "context": "When someone dismisses your feelings or says you should not be upset.",
+          "tone": "Firm and defensive; appropriate when your feelings are being dismissed."
+        },
+        {
+          "expression": "“I'm willing to talk, but not if you're going to shout at me.”",
+          "meaning": "Shows openness to resolving the issue while setting a condition for respectful communication.",
+          "context": "When you want to continue a disagreement calmly but the other person is shouting.",
+          "tone": "Assertive, specific, and generally less confrontational than an insult."
+        }
+      ]
+    },
+    {
+      "id": "tone-practice",
+      "label": "Tone of voice",
+      "title": "The same words can communicate different emotions.",
+      "description": "Say “I've had enough!” in each way. The words stay the same; your stress, pace, volume, and emotional intention change.",
+      "type": "tone",
+      "phrase": "I've had enough!",
+      "versions": [
+        {
+          "delivery": "Calm firmness",
+          "explanation": "Use an even, steady volume and deliberate pace. Stress enough, then pause. You sound serious without shouting."
+        },
+        {
+          "delivery": "Annoyance",
+          "explanation": "Use slightly sharper stress on enough and a quicker pace. Keep your volume controlled so the irritation is clear without becoming a shout."
+        },
+        {
+          "delivery": "Anger",
+          "explanation": "The words may be louder and more forceful, with stronger stress and less patience. Avoid pushing your voice; shouting can escalate the argument."
+        },
+        {
+          "delivery": "Sarcasm",
+          "explanation": "Use exaggerated stress or a drawn-out enough with a flat or ironic delivery. The listener may hear criticism rather than a sincere boundary."
+        }
+      ],
+      "deliveryNotes": [
+        "Stress can make one word sound more important: “I've had ENOUGH.”",
+        "A slower pace can make a boundary sound deliberate and controlled.",
+        "A louder voice can signal anger, but high volume may also sound threatening.",
+        "A flat or exaggerated rise-and-fall can make the phrase sound sarcastic.",
+        "You do not need audio to practise: read the phrase aloud and deliberately change one feature at a time."
+      ],
+      "practice": "Practice: say the phrase four times. Keep the words identical and change only your emotional delivery each time."
+    },
+    {
+      "id": "boundary-dialogue",
+      "label": "Realistic dialogue",
+      "title": "Someone keeps touching another person's belongings.",
+      "description": "Read how the disagreement develops. Notice the dismissive replies, the repeated boundary, and the controlled conclusion.",
+      "type": "dialogue",
+      "turns": [
+        { "speaker": "Maya", "line": "Could you please stop moving my notebook? I need it where I left it." },
+        { "speaker": "Leo", "line": "It's just a notebook. I was only looking for a pen." },
+        { "speaker": "Maya", "line": "I understand, but please ask before touching my things." },
+        { "speaker": "Leo", "line": "You're making a big deal out of nothing." },
+        { "speaker": "Maya", "line": "It matters to me. I've asked you not to move my belongings." },
+        { "speaker": "Leo", "line": "I didn't even move it that far. Relax." },
+        { "speaker": "Maya", "line": "Don't tell me how I should feel. I want you to leave my things alone." },
+        { "speaker": "Leo", "line": "Fine, but you don't have to get so angry about it." },
+        { "speaker": "Maya", "line": "I'm frustrated because this has happened several times, and you keep dismissing what I'm saying." },
+        { "speaker": "Leo", "line": "I was just trying to borrow your charger earlier. What's the problem?" },
+        { "speaker": "Maya", "line": "That's not what I said. I'm asking you to get permission before touching anything that belongs to me." },
+        { "speaker": "Leo", "line": "All right, I hear you. I thought you wouldn't mind." },
+        { "speaker": "Maya", "line": "I do mind. Please ask first, and don't touch my things if I say no." },
+        { "speaker": "Leo", "line": "Okay. I'll ask next time." },
+        { "speaker": "Maya", "line": "Thank you. I'm willing to talk about it, but I need you to respect that boundary." },
+        { "speaker": "Leo", "line": "Understood. I won't move your things again without asking." },
+        { "speaker": "Maya", "line": "I appreciate that. Let's leave it there and get back to work." },
+        { "speaker": "Leo", "line": "Fair enough. Sorry for brushing you off." },
+        { "speaker": "Maya", "line": "Thanks for apologizing. I just want my belongings left where I put them." },
+        { "speaker": "Leo", "line": "I understand. I'll respect that." }
+      ],
+      "questions": [
+        {
+          "question": "Why does Maya ask Leo to stop moving the notebook?",
+          "answer": "She needs it where she left it and wants him to ask before touching her belongings."
+        },
+        {
+          "question": "How does Leo dismiss Maya's concern at first?",
+          "answer": "He says it is just a notebook, claims she is making a big deal out of nothing, and tells her to relax."
+        },
+        {
+          "question": "Why does Maya say she is frustrated?",
+          "answer": "This has happened several times, and Leo keeps dismissing what she says."
+        },
+        {
+          "question": "What specific boundary does Maya set?",
+          "answer": "Leo should get permission before touching her belongings, and he should leave them alone if she says no."
+        },
+        {
+          "question": "How does the conversation reach a firm conclusion?",
+          "answer": "Leo acknowledges the boundary, agrees not to move her things without asking, and apologizes for dismissing her."
+        }
+      ]
+    },
+    {
+      "id": "multiple-choice",
+      "label": "Multiple-choice practice",
+      "title": "Choose the response that fits the situation.",
+      "description": "Select an option to check it and read feedback. Each question is independent.",
+      "type": "multipleChoice",
+      "items": [
+        {
+          "question": "Someone interrupts you several times during a discussion. What is a clear, controlled response?",
+          "context": "You want to finish your point without insulting them.",
+          "options": [
+            { "text": "“Let me finish, please.”", "feedback": "This asks for space to complete your point and keeps the focus on the interruption." },
+            { "text": "“What's your problem?”", "feedback": "This attacks the person and is likely to escalate the disagreement." },
+            { "text": "“Don't tell me how I should feel.”", "feedback": "This phrase is for dismissed feelings, not for someone interrupting you." }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "question": "A colleague blames you for a mistake you did not make. What is the most useful first response?",
+          "context": "You want to correct the record without making an unsupported accusation.",
+          "options": [
+            { "text": "“Are you kidding me?”", "feedback": "This communicates disbelief but does not explain what is inaccurate." },
+            { "text": "“That's not what happened. Let me explain my part.”", "feedback": "This calmly challenges the blame and offers a chance to clarify the facts." },
+            { "text": "“Watch your tone.”", "feedback": "This addresses disrespectful delivery, not whether the blame is accurate." }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "question": "Someone repeatedly touches your belongings after you asked them not to. Which response sets a specific boundary?",
+          "options": [
+            { "text": "“Please ask before touching my things. I've already asked you to stop.”", "feedback": "This names the behavior and clearly repeats the boundary." },
+            { "text": "“Don't tell me how I should feel.”", "feedback": "This rejects emotional dismissal but does not directly address the touching." },
+            { "text": "“That's not what I said.”", "feedback": "This corrects a misrepresentation of your words rather than setting the requested boundary." }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "question": "A person is speaking to you disrespectfully. Which phrase directly addresses the way they are speaking?",
+          "options": [
+            { "text": "“I'm fed up with waiting.”", "feedback": "This expresses frustration with waiting, not disrespectful speech." },
+            { "text": "“Don't talk to me like that.”", "feedback": "This directly sets a boundary about disrespectful speech." },
+            { "text": "“Let me finish.”", "feedback": "This is useful for interruptions but may not address other forms of disrespect." }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "question": "Someone says, “You shouldn't be upset. It's not a big deal.” What can you say to reject the dismissal of your feelings?",
+          "options": [
+            { "text": "“Don't put words in my mouth.”", "feedback": "This challenges someone misrepresenting what you said, rather than telling you how to feel." },
+            { "text": "“I've had enough!”", "feedback": "This says you will not tolerate more, but does not specifically address the dismissal." },
+            { "text": "“Don't tell me how I should feel.”", "feedback": "This clearly rejects someone else's attempt to dictate your emotions." }
+          ],
+          "correctIndex": 2
+        }
+      ]
+    },
+    {
+      "id": "fill-in-the-blank",
+      "label": "Fill in the blank",
+      "title": "Complete each sentence with a useful expression.",
+      "description": "Type the missing phrase, then check your answer. Capitalization and punctuation do not matter.",
+      "type": "fillBlank",
+      "items": [
+        {
+          "sentence": "You keep borrowing my things without asking. I've ___ of this.",
+          "answers": ["had enough"],
+          "explanation": "“I've had enough of this” expresses that you will not tolerate a repeated problem anymore."
+        },
+        {
+          "sentence": "Please don't interrupt me. ___.",
+          "answers": ["Let me finish"],
+          "explanation": "“Let me finish” is a direct way to ask someone to stop interrupting until your point is complete."
+        },
+        {
+          "sentence": "I didn't say that you were responsible. ___.",
+          "answers": ["That's not what I said"],
+          "explanation": "Use “That's not what I said” to correct an inaccurate version of your words."
+        },
+        {
+          "sentence": "I'm willing to talk, but not ___",
+          "answers": ["if you're going to shout at me", "if you are going to shout at me"],
+          "explanation": "“I'm willing to talk, but not if you're going to shout at me” shows that you are open to resolving the issue while asking for respectful communication."
+        },
+        {
+          "sentence": "This is my desk. ___ before touching my belongings.",
+          "answers": ["Ask me", "Please ask me"],
+          "explanation": "Asking first is a clear, specific boundary about personal belongings."
+        }
+      ]
+    },
+    {
+      "id": "speaking-practice",
+      "label": "Speaking practice",
+      "title": "Try your own response before you reveal a model.",
+      "description": "Answer aloud first, then compare your response with the sample. The questions include practical role-play and IELTS-style discussion.",
+      "type": "speaking",
+      "items": [
+        {
+          "question": "Role-play: Someone keeps touching your belongings without permission. What would you say, and how would you respond if they dismissed your concern?",
+          "sampleAnswer": "Please stop touching my things. I've asked you not to, and I need you to respect that. I understand you may not think it's a big deal, but these are my belongings. If you want to borrow something, ask me first."
+        },
+        {
+          "question": "Role-play: Someone blames you for a mistake you did not make. How would you correct them without making the disagreement worse?",
+          "sampleAnswer": "I think there's been a misunderstanding. That's not what happened from my point of view. I didn't make that change, but I can show you what I did and help us work out where the mistake happened."
+        },
+        {
+          "question": "Role-play: Someone repeatedly interrupts you. What could you say first, and what could you say if they continue?",
+          "sampleAnswer": "Let me finish my point, please. I want to hear what you think, but I haven't finished explaining yet. If you could give me a moment, I'll listen to your response afterward."
+        },
+        {
+          "question": "IELTS-style discussion: Why do some disagreements become more emotional than others?",
+          "sampleAnswer": "I think disagreements become more emotional when people feel they are being treated unfairly or not listened to. The topic itself can matter, but a person's past experiences and the way others speak to them also affect their reaction. Staying calm and asking questions can sometimes prevent a small disagreement from turning into a serious argument."
+        },
+        {
+          "question": "IELTS-style discussion: Do you think it is better to avoid conflict or discuss problems directly?",
+          "sampleAnswer": "It depends on the situation. If someone is very angry, it may be better to take a short break and talk later. However, avoiding every difficult conversation can allow a problem to continue. I think people should discuss important issues directly but respectfully, and be willing to listen to each other."
+        }
+      ]
+    },
+    {
+      "id": "lesson-review",
+      "label": "Review",
+      "title": "Check what you can remember.",
+      "description": "Try each question without looking back. Reveal the answer when you are ready to check.",
+      "type": "review",
+      "items": [
+        {
+          "question": "Which word describes anger caused by being unable to make progress?",
+          "answer": "Frustrated. It describes being upset or impatient because something is blocking your progress."
+        },
+        {
+          "question": "What does “fed up” usually suggest?",
+          "answer": "You have tolerated an annoying or frustrating situation for a while and do not want it to continue."
+        },
+        {
+          "question": "How can saying “I've had enough!” calmly differ from shouting it?",
+          "answer": "Calm, steady delivery communicates a firm boundary. Shouting communicates stronger anger and may escalate the conflict."
+        },
+        {
+          "question": "What is one difference between assertive and aggressive communication?",
+          "answer": "Assertive communication clearly states a need or boundary while respecting the other person. Aggressive communication attacks, threatens, or tries to overpower them."
+        },
+        {
+          "question": "Give one clear sentence for setting a boundary about personal belongings.",
+          "answer": "For example: “Please ask before touching my things.” A clear boundary names the behavior you want to stop or change."
+        }
+      ]
+    }
+  ]
+}
